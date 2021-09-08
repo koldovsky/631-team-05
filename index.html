@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    
+
     <header>
         <!--Контакти-->
         <div class="contacts">
@@ -34,11 +34,11 @@
                 <a href="" class="navigations__testimonials">Testimonials</a>
             </div>
             <div class="navigation-social">
-                <img src="" alt="facebook">
-                <img src="" alt="instagram">
-                <img src="" alt="twitter">
-                <img src="" alt="youtube">
-            </div>
+                <a href="https://www.facebook.com/" target="blank"><img width="50" src="img/icons/facebook-icon.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/" target="blank"><img width="50" src="img/icons/insta-icon.png" alt="instagram"></a>
+                <a href="https://twitter.com/" target="blank"><img width="50" src="img/icons/twitter-icon.png" alt="twitter"></a>
+                <a href="https://www.youtube.com/" target="blank"><img width="50" src="img/icons/you-toube-icon.png" alt="youtube"></a>  
+             </div>
         </nav>
         <!--Основна сторінка-->
         <div class="banner">
@@ -56,77 +56,198 @@
         <!--Перша секція-->
         <section class="first-section">
             <!--Каруселька з сервісом-->
-            <div class="services">
-                <div class="services__type">
-                    <div class="item">
-                        <div class="item__icon">
-                            <img src="" alt="Money back">
+            <div class="content">
+                <div class="services">
+                    <div class="services__type">
+                        <div class="item">
+                            <div class="item__icon">
+                                <img width="50" src="img/icons/money-back.svg" alt="Money back">
+                            </div>
+                            <div class="item__text">
+                                <h3>Money back</h3>
+                                <p>30-days guarantee</p>
+                            </div>
                         </div>
-                        <div class="item__text">
-                            <h2>Money back</h2>
-                            <p>30-days guarantee</p>
+                        <div class="item">
+                            <div class="item__icon">
+                                <img width="50" src="img/icons/support.svg" alt="24/7 Support">
+                            </div>
+                            <div class="item__text">
+                                <h3>24/7 Support</h3>
+                                <p>We work round the clock</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__icon">
+                                <img width="50" src="img/icons/fast-del.svg" alt="Fast delivery">
+                            </div>
+                            <div class="item__text">
+                                <h3>Fast delivery</h3>
+                                <p>In 2-4 business days</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__icon">
+                                <img width="50" src="img/icons/support.svg" alt="24/7 Support">
+                            </div>
+                            <div class="item__text">
+                                <h3>24/7 Support</h3>
+                                <p>We work round the clock</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__icon">
+                                <img width="50" src="img/icons/free-ship.svg" alt="Free Shipping">
+                            </div>
+                            <div class="item__text">
+                                <h3>Free Shipping</h3>
+                                <p>For all orders over $100</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="item__icon">
-                            <img src="" alt="24/7 Support">
+                </div>
+                <!--Вкладки(таби) для першої секції-->
+                <div class="tabs">
+                    <div class="tabs__head">
+                        <a href="#tab_01" class="tabs__name">Featured</a>
+                        <a href="#tab_02" class="tabs__name">Sale</a>
+                        <a href="#tab_03" class="tabs__name">New</a>
+                    </div>
+                    <div class="tabs__body">
+                        <!--Вкладка Featured-->
+                        <div id="tab_01" class="tabs__content">
+                            <div class="tabs__image">
+                                <a href="#"><img src="img/featured/jbl-rr.png" alt="jbl RR-56"></a>
+                            </div>
+                            <a href="">JBL RR-56</a>
+                            <p>$110,00</p>
+                            <form action="#" method="get">
+                                <button type="submit">Add to cart</button>
+                            </form>
+
+                            <div class="tabs__image">
+                                <a href="#"><img src="img/featured/sennheiser-sn.png" alt="Sennheiser SN-67"></a>
+                            </div>
+                            <a href="">Sennheiser SN-67</a>
+                            <p>$213,00</p>
+                            <form action="#" method="get">
+                                <button type="submit">Add to cart</button>
+                            </form>
+
+                            <div class="tabs__image">
+                                <a href="#"><img src="img/featured/gbl-gt.png" alt="JBL GT-345"></a>
+                            </div>
+                            <a href="">JBL GT-345</a>
+                            <p>$120,00</p>
+                            <form action="#" method="get">
+                                <button type="submit">Add to cart</button>
+                            </form>
+
+                            <div class="tabs__image">
+                                <a href="#"><img src="img/featured/sony-s.png" alt="Sony S890"></a>
+                            </div>
+                            <a href="">Sony S890</a>
+                            <p>$259,00</p>
+                            <form action="#" method="get">
+                                <button type="submit">Add to cart</button>
+                            </form>
                         </div>
-                        <div class="item__text">
-                            <h2>24/7 Support</h2>
-                            <p>We work round the clock</p>
+
+                        <!--Вкладка Sale-->
+                        <div id="tab_02" class="tabs__content">
+                            <div class="tabs__image">
+                                <a href="#"><img src="img/sale/marshall-dr.png" alt="Marshal DR67"></a>
+                            </div>
+                            <a href="">Marshal DR67</a>
+                            <p>$459,00</p>
+                            <form action="#" method="get">
+                                <button type="submit">Add to cart</button>
+                            </form>
+
+                            <div class="tabs__image">
+                                <a href="#"><img src="img/sale/v-moda.png" alt="V-MODA ER65"></a>
+                            </div>
+                            <a href="">V-MODA ER65</a>
+                            <p>$80,00</p>
+                            <form action="#" method="get">
+                                <button type="submit">Add to cart</button>
+                            </form>
+
+                            <div class="tabs__image">
+                                <a href="#"><img src="img/sale/bose-g.png" alt="Bose G656-A"></a>
+                            </div>
+                            <a href="">Bose G656-A</a>
+                            <p>$65,00</p>
+                            <form action="#" method="get">
+                                <button type="submit">Add to cart</button>
+                            </form>
+
+                            <div class="tabs__image">
+                                <a href="#"><img src="img/sale/airpulse-r.png" alt="AirPulse R255"></a>
+                            </div>
+                            <a href="">AirPulse R255</a>
+                            <p>$185,00</p>
+                            <form action="#" method="get">
+                                <button type="submit">Add to cart</button>
+                            </form>
+
+                        </div>
+                        <!--Вкладка New-->
+                        <div id="tab_03" class="tabs__content">
+                            <div class="tabs__image">
+                                <a href="#"><img src="img/new/sony-y.png" alt="Sony YT555"></a>
+                            </div>
+                            <a href="">Sony YT555</a>
+                            <p>$140,00</p>
+                            <form action="#" method="get">
+                                <button type="submit">Add to cart</button>
+                            </form>
+
+                            <div class="tabs__image">
+                                <a href="#"><img src="img/new/sony-tt.png" alt="Sony TT56"></a>
+                            </div>
+                            <a href="">Sony TT56</a>
+                            <p>$98,00</p>
+                            <form action="#" method="get">
+                                <button type="submit">Add to cart</button>
+                            </form>
+
+                            <div class="tabs__image">
+                                <a href="#"><img src="img/new/jbl-br.png" alt="JBL BR-55"></a>
+                            </div>
+                            <a href="">JBL BR-55</a>
+                            <p>$110,00</p>
+                            <form action="#" method="get">
+                                <button type="submit">Add to cart</button>
+                            </form>
+
+                            <div class="tabs__image">
+                                <a href="#"><img src="img/new/jbl-wn.png" alt="JBL 334WN"></a>
+                            </div>
+                            <a href="">JBL 334WN</a>
+                            <p>$140,00</p>
+                            <form action="#" method="get">
+                                <button type="submit">Add to cart</button>
+                            </form>
+
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="item__icon">
-                            <img src="" alt="Fast delivery">
-                        </div>
-                        <div class="item__text">
-                            <h2>Fast delivery</h2>
-                            <p>In 2-4 business days</p>
-                        </div>
+                </div>
+                <div class="offers-cotainer">
+                    <div class="offer-jbl">
+                        <h2>JBL Speakers</h2>
+                        <p> <strike>$300.00</strike> $250.00</p>
+                        <p>Special price on a variety of JBL loudspeakers.</p>
+                        <a href="">LEARN MORE</a>
                     </div>
-                    <div class="item">
-                        <div class="item__icon">
-                            <img src="" alt="24/7 Support">
-                        </div>
-                        <div class="item__text">
-                            <h2>24/7 Support</h2>
-                            <p>We work round the clock</p>
-                        </div>
+                    <div class="offer-special">
+                        <p>SPECIAL OFFER</p>
+                        <h2>Headphones Sale</h2>
+                        <a href="">LEARN MORE</a>
                     </div>
-                    <div class="item">
-                        <div class="item__icon">
-                            <img src="" alt="Free Shipping">
-                        </div>
-                        <div class="item__text">
-                            <h2>Free Shipping</h2>
-                            <p>For all orders over $100</p>
-                        </div>
-                    </div>
+
                 </div>
             </div>
-            <!--Вкладки(таби) для першої секції-->
-            <div class="tabs">
-                <div class="tabs__head">
-                   <a href="" class="tabs__name">Featured</a>
-                   <a href="" class="tabs__name">Sale</a>
-                   <a href="" class="tabs__name">New</a>
-                </div>
-                <div class="tabs__body">
-                   <div class="tabs__content">
-                      <div class="tabs__image">
-                         <a href="#"><img src="" alt="red loudspeaker"></a>
-                      </div>
-                      <a href="">JBL RR-56</a>
-                      <p>$110,00</p>
-                      <form action="#" method="get">
-                         <button type="submit">Add to cart</button>
-                      </form>
-    
-                   </div>
-                </div>
-             </div>
-
         </section>
         <!--Четверта секція (початок)-->
         <section class="fourth-section">
