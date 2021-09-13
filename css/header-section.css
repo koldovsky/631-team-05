@@ -1,45 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap");
 
-:root{
-    font-family: "PT Sans" ,sans-serif;
-    font-size: 17px;
-    color: #2a2a2a;
+:root {
+  font-family: "PT Sans", sans-serif;
+  font-size: 17px;
+  color: #2a2a2a;
 }
-.container-top{
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
+.container-top {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
-
 
 /* Contacts styles */
 header .contacts {
-    max-width: 100%;
-    
+  max-width: 100%;
 }
-header .contacts_black{
-    background-color: rgb(42, 42, 42);
-    
+header .contacts_black {
+  background-color: rgb(42, 42, 42);
 }
 /* header .contacts_white{
     background-color: rgb(242, 242, 242);
 } */
-header .contacts__item{
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 1.3px;
-    line-height: 1.15rem;
-    padding: 15px;
-    margin: 15px 0;
+header .contacts__item {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  line-height: 1.15rem;
+  padding: 15px;
+  margin: 15px 0;
 }
-header .contacts__item_white{
-    color: #fff;
+header .contacts__item_white {
+  color: #fff;
 }
-header .contacts__item_white a{
-    text-decoration: none;
-    color: #fff;
+header .contacts__item_white a {
+  text-decoration: none;
+  color: #fff;
 }
 /* header .contacts__item_black{
     color: #2a2a2a;
@@ -49,85 +46,78 @@ header .contacts__item_black a{
     color: #2a2a2a;
 } */
 
-header .contacts__item_white a:hover{
-    text-decoration: underline;
+header .contacts__item_white a:hover {
+  text-decoration: underline;
 }
-header .contacts__item_black a:hover{
-    text-decoration: underline;
+header .contacts__item_black a:hover {
+  text-decoration: underline;
 }
-
 
 /* Navigation styles */
-header .banner-bg{
-    width: 100%;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-    
+header .banner-bg {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
-header .banner-bg_origin{
-    background: url(../img/bg-photos/main-bg.webp) ;
-}
-
-section div nav .navigation-logo img{
-    width: 114px;
-}
-section div nav .navigation-pages{
-    font-size: 0.92rem;
-    color: #474747;
-}
-section div nav .navigation-pages a{
-    font-size: 0.92rem;
-    color: #474747;
-    font-weight: 700;
-    text-decoration: none;
-}
-section div nav .navigation-social img{
-    max-width: 28px;
-    border-radius: 0.4rem;
+header .banner-bg_origin {
+  background: url(../img/bg-photos/main-bg.webp);
 }
 
+section div nav .navigation-logo img {
+  width: 114px;
+}
+section div nav .navigation-pages {
+  font-size: 0.92rem;
+  color: #474747;
+}
+section div nav .navigation-pages a {
+  font-size: 0.92rem;
+  color: #474747;
+  font-weight: 700;
+  text-decoration: none;
+}
+section div nav .navigation-social img {
+  max-width: 28px;
+  border-radius: 0.4rem;
+}
 
 /* Main page styles */
 
-div .banner__text h1{
-    font-family: Heebo;
-    font-size: 5.3rem;
-    font-weight: 900;
-    line-height: 99px;
-    color: #2f2f2f;
-
+div .banner__text h1 {
+  font-family: Heebo;
+  font-size: 5.3rem;
+  font-weight: 900;
+  line-height: 99px;
+  color: #2f2f2f;
 }
-div .banner__text p{
-    font-size: 1.1rem;
-    color: #3b3b3b;
-    line-height: 1.55rem;
+div .banner__text p {
+  font-size: 1.1rem;
+  color: #3b3b3b;
+  line-height: 1.55rem;
 }
-div .banner__text .links a{
-    font-size: 0.8rem;
-    font-weight: 700;
-    line-height: 1rem;
-    letter-spacing: 1px;
-    text-decoration: none;
-    text-transform: uppercase;
+div .banner__text .links a {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
-div .banner__text .links__about{
-    color: #fff;
+div .banner__text .links__about {
+  color: #fff;
 }
-div .banner__text .links__shop{
-    color: rgb(42, 42, 42);
+div .banner__text .links__shop {
+  color: rgb(42, 42, 42);
 }
-
 
 /*Special offers and services section styles*/
 
-
- div .services .item__text h3 {
-    font-family: Heebo;
-    font-size: 1.3rem;
-    font-weight: 700;
+div .services .item__text h3 {
+  font-family: Heebo;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
-div .services .item__text p{
-    color: #6c6c6c;
-    
+div .services .item__text p {
+  color: #6c6c6c;
 }
