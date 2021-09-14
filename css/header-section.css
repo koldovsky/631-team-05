@@ -1,12 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700;&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap");
 
 :root {
   font-family: "PT Sans", sans-serif;
   font-size: 17px;
   color: #2a2a2a;
+  --default-color:#2a2a2a;
   --button-blue-color:#1E90FF;
+  --button-black-color:#000;
   --background-services-color:#FAF0E6;
+  --white-color: #fff;
 }
 .container-top {
   max-width: 380px;
@@ -193,11 +196,13 @@ section div .item .item__icon {
   min-height: 50px;
   background-color: var(--background-services-color);
   border-radius: 50%;
-  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 section div .item .item__icon img{
     display: block;
-    width: 100%;
+    width: 60%;
 }
 section div .item .item__text{
   text-align: left;
@@ -218,15 +223,99 @@ div .services .item__text p {
 
 
 
+/* Tabs for special offers and services section */
+div .tabs .tabs__head{
+  margin-bottom: 25px;
+}
+div .tabs .tabs__head .tabs__name{
+  font-size: 1.1rem;
+  color: var(--default-color);
+  text-decoration: none;
+}
 
-
-.tabs__container{
+div .tabs__content {
+  max-width: 332px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: minmax(332px, 1fr);
+  grid-template-rows: repeat (4, 1fr);
+  grid-gap: 15px;
+}
+div .tabs__container{
   display: flex;
   flex-direction: column;
-  max-width: 328px;
+  align-items: flex-start;
+  max-width: 332px;
   margin: auto;
+  padding: 25px;
+  border: 2px solid var(--background-services-color);
 }
-.tabs__container .tabs__image img{
+div .tabs__container .tabs__image img{
   display: block;
+  min-width: 275px;
   max-width: 100%;
+}
+div .tabs__container .tabs__product-name {
+  color: var(--default-color);
+  font-weight: 700;
+  text-decoration: none;
+}
+div .tabs__container p {
+  font-size: 0.95rem;
+  color: var(--default-color);
+  font-weight: 700;
+  
+}
+div .tabs__container .tabs__button{
+  background-color: var(--button-black-color);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--white-color);
+  text-transform: uppercase;
+  padding: 15px 25px;
+
+}
+
+
+div .offers-cotainer{
+  /* min-height: 781px; */
+  max-width: 332px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+div .offers-cotainer .offer-jbl{
+  background: url(../img/bg-photos/women-bg.webp);
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  margin: 50px 0;
+}
+div .offers-cotainer .offer-jbl h2{
+  font-family: Heebo;
+  font-size: 2.35rem;
+  line-height: 0;
+  font-weight: 900;
+
+}
+div .offers-cotainer .offer-jbl .offer__strike span{
+   font-size: 1.05rem;
+   font-family: Heebo;
+   font-weight: 700;
+   color: #53535373;
+   text-decoration: line-through;
+}
+div .offers-cotainer .offer-jbl .offer__strike {
+  font-size: 1.3em;
+  font-family: Heebo;
+  font-weight: 700;
+  color: #EB5112;
+}
+div .offers-cotainer .offer-special{
+  background: url(../img/bg-photos/blue-hps-bg.webp);
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  min-height: 383px;
 }
