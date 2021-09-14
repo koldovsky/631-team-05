@@ -4,12 +4,13 @@
 :root {
   font-family: "PT Sans", sans-serif;
   font-size: 17px;
+  box-sizing: border-box;
   color: #2a2a2a;
   --default-color:#2a2a2a;
   --button-blue-color:#1E90FF;
   --button-black-color:#000;
   --background-services-color:#FAF0E6;
-  --white-color: #fff;
+  --light-text-color: #fff;
 }
 .container-top {
   max-width: 380px;
@@ -209,14 +210,14 @@ section div .item .item__text{
   margin-left: 15px;
   
 }
-div .services .item__text h3 {
+section div .item__text h3 {
   font-family: Heebo;
   font-size: 1.3rem;
   font-weight: 700;
   line-height: 5px;
 
 }
-div .services .item__text p {
+section div .item__text p {
   color: #6c6c6c;
   line-height: 5px;
 }
@@ -224,6 +225,7 @@ div .services .item__text p {
 
 
 /* Tabs for special offers and services section */
+
 div .tabs .tabs__head{
   margin-bottom: 25px;
 }
@@ -270,7 +272,7 @@ div .tabs__container .tabs__button{
   background-color: var(--button-black-color);
   font-size: 0.7rem;
   font-weight: 700;
-  color: var(--white-color);
+  color: var(--light-text-color);
   text-transform: uppercase;
   padding: 15px 25px;
 
@@ -284,18 +286,20 @@ div .offers-cotainer{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 }
 div .offers-cotainer .offer-jbl{
   background: url(../img/bg-photos/women-bg.webp);
   background-size: cover;
-  background-position: center;
+  background-position: 45.78% 50.75%;
   padding: 25px;
   margin: 50px 0;
+  min-height: 248px;
 }
 div .offers-cotainer .offer-jbl h2{
   font-family: Heebo;
   font-size: 2.35rem;
-  line-height: 0;
+  line-height: 0;         /*переглянути ліне хейт для респонсіву може маргін ботом*/
   font-weight: 900;
 
 }
@@ -312,10 +316,53 @@ div .offers-cotainer .offer-jbl .offer__strike {
   font-weight: 700;
   color: #EB5112;
 }
+div .offers-cotainer .offer-jbl .offer__text {
+   color: #797878;
+   line-height: 1.3rem;
+}
 div .offers-cotainer .offer-special{
   background: url(../img/bg-photos/blue-hps-bg.webp);
   background-size: cover;
-  background-position: center;
+  background-position: 48.28% 81.3%;
   padding: 25px;
   min-height: 383px;
+  
+}
+div .offers-cotainer .offer-special p{
+  color: var(--light-text-color);
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.05rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+div .offers-cotainer .offer-special h2{
+   font-family: Heebo;
+   font-size: 1.3rem;
+   font-weight: 700;
+   color: var(--light-text-color);
+   line-height: 1.95rem;
+
+
+}
+
+div .offers-cotainer .offer__button {
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 0.95rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+div .offers-cotainer .offer__button_black {
+  color: var(--default-color);
+}
+div .offers-cotainer .offer__button_black:after {
+  content: url(../img/icons/blue-line.svg);
+  position: relative;
+  width: 24px;
+  margin-left: 10px; 
+}
+div .offers-cotainer .offer__button_white {
+  color: var(--light-text-color);
 }
