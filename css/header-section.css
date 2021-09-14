@@ -5,24 +5,33 @@
   font-family: "PT Sans", sans-serif;
   font-size: 17px;
   color: #2a2a2a;
+  --button-blue-color:#1E90FF;
+  --background-services-color:#FAF0E6;
 }
 .container-top {
+  max-width: 380px;
+  margin: auto;
+}
+/* .container-top {
   max-width: 1200px;
   margin: auto;
   display: flex;
   justify-content: space-between;
-}
+  
+} */
 
 /* Contacts styles */
-header .contacts {
+ header .contacts {
   max-width: 100%;
+  display: none;
 }
+/*
 header .contacts_black {
   background-color: rgb(42, 42, 42);
 }
-/* header .contacts_white{
+header .contacts_white{
     background-color: rgb(242, 242, 242);
-} */
+}
 header .contacts__item {
   font-size: 0.75rem;
   font-weight: 700;
@@ -38,36 +47,63 @@ header .contacts__item_white a {
   text-decoration: none;
   color: #fff;
 }
-/* header .contacts__item_black{
+header .contacts__item_black{
     color: #2a2a2a;
 }
 header .contacts__item_black a{
     text-decoration: none;
     color: #2a2a2a;
-} */
+}
 
 header .contacts__item_white a:hover {
   text-decoration: underline;
 }
 header .contacts__item_black a:hover {
   text-decoration: underline;
-}
+} */
 
 /* Navigation styles */
+.container-top_flex{
+  display: flex;
+  flex-direction: column;
+  max-width: 332px; 
+  
+
+}
 header .banner-bg {
-  width: 100%;
-  min-height: 100vh;
+  min-height: 753px;
   background-size: cover;
   background-position: center;
+  
+  
 }
 header .banner-bg_origin {
   background: url(../img/bg-photos/main-bg.webp);
+  padding: 0 24px;
+}
+section div nav .navigation-pages, .navigation-social {
+  display: none;
 }
 
-section div nav .navigation-logo img {
-  width: 114px;
+section div nav .navigation-logo{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  
 }
-section div nav .navigation-pages {
+section div nav .navigation-logo img {
+  max-width: 114px;
+    
+}
+section div nav .navigation__burger-button{
+  display: block;
+  width: 24px;
+  padding: 12px;
+}
+/* section div nav .navigation-pages {
   font-size: 0.92rem;
   color: #474747;
 }
@@ -80,44 +116,117 @@ section div nav .navigation-pages a {
 section div nav .navigation-social img {
   max-width: 28px;
   border-radius: 0.4rem;
-}
+} */
 
 /* Main page styles */
+section div .banner {
+  padding: 60px 0 100px 0;
+  
+}
+section div .banner__text{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-wrap: break-word;
+
+  
+}
 
 div .banner__text h1 {
   font-family: Heebo;
-  font-size: 5.3rem;
+  font-size: 3.25rem;
   font-weight: 900;
-  line-height: 99px;
+  line-height: 66px;
   color: #2f2f2f;
+  max-width: 276px;
+    
 }
 div .banner__text p {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: #3b3b3b;
   line-height: 1.55rem;
+  margin-bottom: 40px;
 }
-div .banner__text .links a {
-  font-size: 0.8rem;
+div .links{
+  margin-top: 25px;
+}
+div .links a {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
   font-weight: 700;
   line-height: 1rem;
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 20px;
+  
+
 }
-div .banner__text .links__about {
+div .links__about {
+  background: var(--button-blue-color);
   color: #fff;
 }
-div .banner__text .links__shop {
+div .links__shop {
   color: rgb(42, 42, 42);
+}
+
+@media (min-width: 381px) {
+  .container-top {
+    max-width: 450px;
+  }
 }
 
 /*Special offers and services section styles*/
 
+/* Roundabout with services */
+
+section div .item{
+  max-width: 325px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+section div .item .item__icon {
+  max-width: 50px;
+  min-height: 50px;
+  background-color: var(--background-services-color);
+  border-radius: 50%;
+  align-self: center;
+}
+section div .item .item__icon img{
+    display: block;
+    width: 100%;
+}
+section div .item .item__text{
+  text-align: left;
+  margin-left: 15px;
+  
+}
 div .services .item__text h3 {
   font-family: Heebo;
   font-size: 1.3rem;
   font-weight: 700;
+  line-height: 5px;
+
 }
 div .services .item__text p {
   color: #6c6c6c;
+  line-height: 5px;
+}
+
+
+
+
+
+.tabs__container{
+  display: flex;
+  flex-direction: column;
+  max-width: 328px;
+  margin: auto;
+}
+.tabs__container .tabs__image img{
+  display: block;
+  max-width: 100%;
 }
