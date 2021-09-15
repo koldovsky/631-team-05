@@ -30,17 +30,17 @@ div .offers-cotainer{
     font-size: 1.05rem;
     font-family: var(--additional-font);
     font-weight: 700;
-    color: #53535373;
+    color: var(--offer-strike-color);
     text-decoration: line-through;
   }
   div .offers-cotainer .offer-jbl .offer__strike {
     font-size: 1.3em;
     font-family: var(--additional-font);
     font-weight: 700;
-    color: #EB5112;
+    color: var(--offer-jbl-color);
   }
   div .offers-cotainer .offer-jbl .offer__text {
-    color: #797878;
+    color: var(--offer-jbl-strike-color);
     line-height: 1.3rem;
   }
   div .offers-cotainer .offer-special{

@@ -30,6 +30,8 @@ section div .item{
     font-size: 1.3rem;
     font-weight: 700;
     line-height: 5px;
+    color: #6c6c6c;
+
   
   }
   section div .item__text p {

@@ -16,13 +16,13 @@
   header .banner-bg {
     min-height: 753px;
     background-size: cover;
-    background-position: center;
-    
+    background-position: center; 
     
   }
   header .banner-bg_origin {
     background: url(../img/bg-photos/main-bg.webp);
     padding: 0 24px;
+    
   }
   section div nav .navigation-pages, .navigation-social {
     display: none;
@@ -46,23 +46,10 @@
     width: 24px;
     padding: 12px;
   }
-  /* section div nav .navigation-pages {
-    font-size: 0.92rem;
-    color: #474747;
-  }
-  section div nav .navigation-pages a {
-    font-size: 0.92rem;
-    color: #474747;
-    font-weight: 700;
-    text-decoration: none;
-  }
-  section div nav .navigation-social img {
-    max-width: 28px;
-    border-radius: 0.4rem;
-  } */
+ 
 
 
-  @media (max-width: 479px)) {
+   @media (min-width: 480px) {
 
     .container-top_flex{
       display: flex;
@@ -71,5 +58,53 @@
       
     
     }
-    
+     
   }
+    @media (min-width: 768px) {
+        header .banner-bg {
+          min-height: 983px;                   
+        }
+        .container-top_flex{
+          max-width: 785px;       
+        }
+    }
+
+    @media (min-width: 991px){
+      section div nav .navigation__burger-button{
+        display: none;
+      }
+      section div nav .navigation-pages, .navigation-social {
+        display: flex;
+      }
+
+      section div .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+      }
+
+      section div nav .navigation-pages {
+        font-size: 0.92rem;
+        color: var(--nav-pages-color);
+        min-width: 480px;
+        display: flex;
+        justify-content: space-around;
+      }
+      section div nav .navigation-pages a {
+        font-size: 0.91rem;
+        color: var(--nav-pages-color);
+        font-weight: 700;
+        text-decoration: none;
+      }
+      section div nav .navigation-social{
+        min-width: 172px;
+        display: flex;
+        justify-content: space-around;
+      }
+      section div nav .navigation-social img {
+        max-width: 28px;
+        border-radius: 0.4rem;
+      }
+  
+    }

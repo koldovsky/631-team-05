@@ -8,11 +8,20 @@
   box-sizing: border-box;
   color: #2a2a2a;
   --default-color:#2a2a2a;
+  --contacts-links-color: rgb(42, 42, 42);
+  --offer-strike-color: #53535373;
+  --nav-pages-color: #474747;
   --button-blue-color:#1E90FF;
   --button-black-color:#000;
   --button-colorfull-color: #F4A460;
+  --banner-h-color: #2f2f2f;
+  --banner-p-color: #3b3b3b;
   --background-services-color:#FAF0E6;
   --light-text-color: #fff;
+  --header-contacts-light: rgb(242, 242, 242);
+  --offer-jbl-color: #EB5112;
+  --offer-jbl-strike-color: #797878;
+
 }
 
 

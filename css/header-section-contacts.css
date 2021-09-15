@@ -1,43 +1,71 @@
 
 /* Contacts styles */
 
-header .contacts {
-    max-width: 100%;
-    display: none;
-  }
-  /*
-  header .contacts_black {
-    background-color: rgb(42, 42, 42);
-  }
-  header .contacts_white{
-      background-color: rgb(242, 242, 242);
-  }
-  header .contacts__item {
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 1.3px;
-    line-height: 1.15rem;
-    padding: 15px;
-    margin: 15px 0;
-  }
-  header .contacts__item_white {
-    color: #fff;
-  }
-  header .contacts__item_white a {
-    text-decoration: none;
-    color: #fff;
-  }
-  header .contacts__item_black{
-      color: #2a2a2a;
-  }
-  header .contacts__item_black a{
+
+  header .contacts {
+      max-width: 100%;
+      display: none;
+      
+    }
+    
+    header .contacts_black {
+      background-color: var(--contacts-links-color);
+      padding: 0 24px;
+    }
+    header .contacts_white{
+        background-color: var(--header-contacts-light);
+    }
+    header .contacts__item {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1.3px;
+      line-height: 1.15rem;
+      padding: 15px 0;
+      margin: 15px 0;
+    }
+    header .contacts__item_white {
+      color: var(--light-text-color);
+      
+    }
+    header .contacts__item_white a {
       text-decoration: none;
-      color: #2a2a2a;
-  }
+      color: var(--light-text-color);
+    }
+    header .contacts__item_white_l {
+      text-align: right;
   
-  header .contacts__item_white a:hover {
-    text-decoration: underline;
+    }
+    header .contacts__item_black{
+        color: var(--default-color);
+    }
+    header .contacts__item_black a{
+        text-decoration: none;
+        color: var(--default-color);
+    }
+    
+    header .contacts__item_white a:hover {
+      text-decoration: underline;
+    }
+    header .contacts__item_black a:hover {
+      text-decoration: underline;
+    }
+
+
+    @media (min-width: 991px){
+      header .contacts {
+        max-width: 100%;
+        display: flex;
+        
+        
+      }
+      header div .container-top_contacts{
+        display: flex;
+        justify-content: space-between;
+        min-width: 927px;
+        max-width: 974px;
+        margin: 0 auto;
+        
+
+      }
+
   }
-  header .contacts__item_black a:hover {
-    text-decoration: underline;
-  } */
