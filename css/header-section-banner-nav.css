@@ -1,6 +1,11 @@
 
 /* Navigation styles */
 
+.container-top {
+  max-width: 380px;
+  margin: auto;
+}
+
 .container-top_flex{
     display: flex;
     flex-direction: column;
@@ -55,3 +60,16 @@
     max-width: 28px;
     border-radius: 0.4rem;
   } */
+
+
+  @media (max-width: 479px)) {
+
+    .container-top_flex{
+      display: flex;
+      flex-direction: column;
+      max-width: 431px; 
+      
+    
+    }
+    
+  }

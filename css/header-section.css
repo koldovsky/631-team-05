@@ -18,10 +18,7 @@
 
 
 
-.container-top {
-  max-width: 380px;
-  margin: auto;
-}
+
 /* .container-top {
   max-width: 1200px;
   margin: auto;
@@ -30,17 +27,6 @@
   
 } */
 
-
-
-
-
-
-
-@media (min-width: 381px) {
-  .container-top {
-    max-width: 450px;
-  }
-}
 
 
 
