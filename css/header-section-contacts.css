@@ -1,0 +1,43 @@
+
+/* Contacts styles */
+
+header .contacts {
+    max-width: 100%;
+    display: none;
+  }
+  /*
+  header .contacts_black {
+    background-color: rgb(42, 42, 42);
+  }
+  header .contacts_white{
+      background-color: rgb(242, 242, 242);
+  }
+  header .contacts__item {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    line-height: 1.15rem;
+    padding: 15px;
+    margin: 15px 0;
+  }
+  header .contacts__item_white {
+    color: #fff;
+  }
+  header .contacts__item_white a {
+    text-decoration: none;
+    color: #fff;
+  }
+  header .contacts__item_black{
+      color: #2a2a2a;
+  }
+  header .contacts__item_black a{
+      text-decoration: none;
+      color: #2a2a2a;
+  }
+  
+  header .contacts__item_white a:hover {
+    text-decoration: underline;
+  }
+  header .contacts__item_black a:hover {
+    text-decoration: underline;
+  } */
