@@ -36,6 +36,7 @@ section div .banner {
     margin-bottom: 40px;
     height: auto;
     letter-spacing: normal;
+    text-align: left;
   }
   div .links{
     margin-top: 25px;
