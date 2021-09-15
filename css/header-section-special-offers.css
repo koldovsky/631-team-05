@@ -17,11 +17,11 @@ div .offers-cotainer{
     padding: 25px;
     margin: 50px 0;
     min-height: 248px;
+    text-align: left;
   }
   div .offers-cotainer .offer-jbl h2 {
     font-family: var(--additional-font);
     font-size: 2.35rem;
-    text-align: left;
     line-height: 0;        
     font-weight: 900;
   
@@ -48,7 +48,8 @@ div .offers-cotainer{
     background-size: cover;
     background-position: 48.28% 81.3%;
     padding: 25px;
-    min-height: 383px;   
+    min-height: 383px;  
+    text-align: left; 
   }
   div .offers-cotainer .offer-special p{
     color: var(--light-text-color);
@@ -63,7 +64,6 @@ div .offers-cotainer{
      font-size: 1.3rem;
      font-weight: 700;
      color: var(--light-text-color);
-     text-align: left;
      line-height: 1.95rem;
   }
   
