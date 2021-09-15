@@ -13,7 +13,7 @@
       padding: 0 24px;
     }
     header .contacts_white{
-        background-color: var(--header-contacts-light);
+      background-color: var(--header-contacts-light);
     }
     header .contacts__item {
       font-size: 0.75rem;
@@ -53,8 +53,8 @@
 
     @media (min-width: 991px){
       header .contacts {
-        max-width: 100%;
         display: flex;
+        
         
         
       }
