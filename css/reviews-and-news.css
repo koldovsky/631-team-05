@@ -13,7 +13,7 @@ color: coral;
 {
     background-color: whitesmoke;
 }
-h2
+div .Our customers Say h2
 {
     text-align: center;
     font-family: "Heebo", sans-serif;
@@ -25,6 +25,10 @@ h2
 {
     
     font-family: "PT Sans", sans-serif;
+}
+
+{
+    width: 327.2px;
 }
 .article-button:hover
 {
@@ -50,4 +54,28 @@ h2
     align-items: center;
 text-align: center;
 }
+@media (min-width: 600px)
+{
+    header .cards-container{
+
+        display: flex;
+    flex-direction: row;
+
+}
+}
+p 
+{
+    text-align: center;
+}
+
+.Our Customers syntax: 
+{
+    align-items: center;
+}
+
+    body 
+    {max-width: 980px;
+        margin: 5px;
+        padding: 5px;
+    }
 

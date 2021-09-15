@@ -1,18 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700;&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap");
-.Speakers h2{
-    color:black;
-    font-size: 40px;
+.video-header{
+    color:white;
+    font-size: 60px;
     font-family: Heebo, sans-serif;
+    text-align: left;
+    
 }
 .Speakers img.logo{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.Speakers p{
-    text-align: center;
+.video-text{
+    text-align: left;
+    color: white;
+    font-family: PT Sans,sans-serif;
 }
 .Speakers .products{
     display: flex;
+}
+.video{
+    background-image: url(../img/girl3.png);
+    background-size: cover;
+    background-position: center;
+    width: 1349px;
+    height: 703px;  
+}
+.play_button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
