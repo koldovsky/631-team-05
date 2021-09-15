@@ -1,0 +1,51 @@
+
+/* Buttons for Tabs */
+
+div .tabs__container .tabs__button{
+  background-color: var(--button-black-color);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--light-text-color);
+  text-transform: uppercase;
+  padding: 15px 25px;
+
+}
+
+
+
+/* Buttons for special offers */
+
+div .offers-cotainer .offer__button {
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 0.95rem;
+    letter-spacing: 1.001px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+div .offers-cotainer .offer__button:after{
+    content: " ";
+    display: inline-block;
+    width: 24px;
+    margin: 0 0 3px 10px; 
+}
+
+
+div .offers-cotainer .offer__button_black {
+  color: var(--default-color);
+}
+div .offers-cotainer .offer__button_black:after {
+  /* content: " ";   */
+  border: 1.5px solid var(--button-blue-color);
+  background: var(--button-blue-color);
+}
+
+
+div .offers-cotainer .offer__button_white {
+  color: var(--light-text-color);
+}
+div .offers-cotainer .offer__button_white:after{
+  border: 1.5px solid var(--button-colorfull-color);
+  background: var(--button-colorfull-color);
+}

@@ -1,0 +1,38 @@
+/* Roundabout with services */
+
+section div .item{
+    max-width: 325px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section div .item .item__icon {
+    max-width: 50px;
+    min-height: 50px;
+    background-color: var(--background-services-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section div .item .item__icon img{
+      display: block;
+      width: 60%;
+  }
+  section div .item .item__text{
+    text-align: left;
+    margin-left: 15px;
+    
+  }
+  section div .item__text h3 {
+    font-family: var(--additional-font);
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 5px;
+  
+  }
+  section div .item__text p {
+    color: #6c6c6c;
+    line-height: 5px;
+  }

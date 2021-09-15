@@ -1,0 +1,83 @@
+
+/* Main page styles */
+
+
+
+section div .banner {
+    padding: 60px 0 100px 0;
+    
+  }
+  section div .banner__text{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* overflow-wrap: break-word; */
+  
+    
+  }
+  
+  div .banner__text h1 {
+    font-family: var(--additional-font);
+    font-size: 3.52rem;
+    font-weight: 900;
+    line-height: 66px;
+    color: #2f2f2f;
+    max-width: 332px;
+    height: auto;
+      
+  }
+  div .banner__text p {
+    font-size: 1rem;
+    color: #3b3b3b;
+    line-height: 1.55rem;
+    margin-bottom: 40px;
+    height: auto;
+    letter-spacing: normal;
+  }
+  div .links{
+    margin-top: 25px;
+  }
+  div .links a {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+    
+  
+  }
+  div .links__about {
+    background: var(--button-blue-color);
+    color: #fff;
+  }
+  div .links__shop {
+    color: rgb(42, 42, 42);
+  }
+  div .links__shop span::after{
+    content: " ";
+    display: inline-block;
+    width: 24px;
+    margin: 0 0 3px 10px;
+    border: 1.5px solid var(--button-colorfull-color);
+    background: var(--button-colorfull-color); 
+    
+  }
+
+  @media (min-width: 381px) {
+
+    div .banner__text h1 {
+      
+      max-width: 431px;
+      
+
+        
+    }
+    .container-top {
+      max-width: 431px;
+    }
+    
+  }
