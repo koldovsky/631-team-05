@@ -138,11 +138,62 @@ section div .banner {
       font-size: 5.3rem;
       line-height: 5.82rem;
       margin-top: 0;
-      max-width: 301px;
+      min-width: 301px;
       max-width: 449px;   
+    }
+    div .banner__text p {
+      font-size: 1.11rem;
+    
+    }  
+
+  }
+  @media (min-width: 1025px){
+    .container-top {
+      max-width: 1120px;
+    }
+
+    section div .banner__text{
+      width: 50%;
+      max-width: 560px;
+    }
+    div .banner__text h1 {
+      font-size: 5.3rem;
+      line-height: 5.82rem;
+      margin-top: 0;
+      /* min-width: 449px; */
+      max-width: 507px;   
+    }
+    div .banner__text p {
+      font-size: 1.11rem;
+    
     }
     
     
     
+
+  }
+  @media (min-width: 1280px){
+    .container-top {
+      min-width: 1120px;
+      max-width: 60%;
+      /* max-width: 1500px; */
+    }
+
+    section div .banner__text{
+      width: 50%;
+      /* max-width: 585px; */
+    }
+    div .banner__text h1 {
+      font-size: 5.3rem;
+      line-height: 5.82rem;
+      margin-top: 0;
+      /* max-width: 549px;    */
+      width: 100%;
+    }
+    div .banner__text p {
+      font-size: 1.11rem;
+    
+    }
+  
 
   }

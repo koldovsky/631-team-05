@@ -2,7 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap");
 
 :root {
-  font-family: "PT Sans", sans-serif;
+  
+  --bs-body-font-family: "PT Sans", sans-serif;
+  font-family: var(--bs-body-font-family);
   font-size: 17px;
   --additional-font: Heebo, sans-serif;
   box-sizing: border-box;
@@ -22,6 +24,9 @@
   --offer-jbl-color: #EB5112;
   --offer-jbl-strike-color: #797878;
 
+
+
+  
 }
 
 
