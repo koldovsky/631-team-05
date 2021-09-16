@@ -3,9 +3,7 @@
 
 :root {
   
-  --bs-body-font-family: "PT Sans", sans-serif;
-  font-family: var(--bs-body-font-family);
-  font-size: 17px;
+  font-size: var(--bs-body-font-size);
   --additional-font: Heebo, sans-serif;
   box-sizing: border-box;
   color: #2a2a2a;
@@ -24,12 +22,17 @@
   --offer-jbl-color: #EB5112;
   --offer-jbl-strike-color: #797878;
 
+  /* boostrap replacement */
+
+  --bs-body-font-family: "PT Sans", sans-serif;
+    font-family: var(--bs-body-font-family);
+    --bs-body-font-size: 17px;
+    font-size: var(--bs-body-font-size);
+
 
 
   
 }
-
-
 
 
 
