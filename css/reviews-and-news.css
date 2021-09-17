@@ -1,2 +1,183 @@
 
 
+
+  .cards-container {
+    display: flex;
+    }
+   
+ .title-our-customer-say> h2
+ {
+   text-align: center;
+ }
+.logo-main{
+  object-position: center;
+}
+.subtitle-customer-say> p
+{
+text-align: center;
+}
+#logo-main
+{
+  margin: auto;
+  width: 50px;
+  object-position: center;
+}
+#person1
+{
+  margin: 10px 350px;
+  max-width: 100px;
+  width: 100px;
+  object-position: center;
+  border-radius: 50%;
+}
+.name1> h3{
+  text-align: center;
+  color: blue;
+  font-size: 17px; 
+}
+.text1> p{
+  text-align: center;
+}
+.date1> h4{
+  text-align: center;
+  color: coral;
+  font-size: 10px; 
+}
+
+#person2
+{
+  margin: 10px 350px;
+  max-width: 100px;
+  width: 100px;
+  object-position: center;
+  border-radius: 50%;
+  
+}
+.name2> h3{
+  text-align: center;
+  color: blue;
+  font-size: 17px; 
+}
+.text2> p{
+  text-align: center;
+}
+.date2> h4{
+  text-align: center;
+  color: coral;
+  font-size: 10px; 
+}
+#person3
+{
+  margin: 10px 350px;
+  max-width: 100px;
+  width: 100px;
+  object-position: center;
+  border-radius: 50%;
+}
+.name3> h3{
+  text-align: center;
+  color: blue;
+  font-size: 17px; 
+}
+.text3> p{
+  text-align: center;
+}
+.date3> h4{
+  text-align: center;
+  color: coral;
+  font-size: 10px; 
+}
+.popular-article{
+  text-align: center;
+}
+#logo-main2
+{
+  margin: auto;
+  width: 50px;
+}
+#big-column
+{
+  width: 200px;
+}
+.subtitle1> h4{
+  text-transform: uppercase;
+  color: coral;
+  font-size: 12;
+}
+.name-article1> p
+{
+  font-weight: 700;
+  text-align: left;
+}
+.paragraph1> p{
+  text-align: left;
+}
+.article-more> a{
+  text-transform: uppercase;
+  color:black;
+  text-decoration: none;
+}
+.article-more:hover{
+  text-decoration: underline;
+}
+#line1{
+  width: 30px;
+}
+
+#girl-with-headphones
+{
+  width: 200px;
+}
+.subtitle2> h4{
+  text-transform: uppercase;
+  color: coral;
+  font-size: 12;
+}
+.name-article2> p
+{
+  font-weight: 700;
+  text-align: left;
+}
+.paragraph2> p{
+  text-align: left;
+}
+.article-button> a{
+  text-transform: uppercase;
+  color:black;
+  text-decoration: none;
+}
+.article-button:hover{
+  text-decoration: underline;
+}
+#line2{
+  width: 30px;
+}
+
+#small-column
+{
+  width: 200px;
+}
+.subtitle3> h4{
+  text-transform: uppercase;
+  color: coral;
+  font-size: 12;
+}
+.name-article3> p
+{
+  font-weight: 700;
+  text-align: left;
+}
+.paragraph3> p{
+  text-align: left;
+}
+.article-button> a{
+  text-transform: uppercase;
+  color:black;
+  text-decoration: none;
+}
+.article-button:hover{
+  text-decoration: underline;
+}
+#line3{
+  width: 30px;
+}
