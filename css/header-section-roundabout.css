@@ -1,4 +1,44 @@
 /* Roundabout with services */
+#carousel-container {
+  max-width: 60%;
+  margin: 50px auto;
+}
+#carousel__logo-bg {
+  max-width: 50px;
+  min-height: 50px;
+  background-color: var(--background-services-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#carousel__logo-bg img {
+  width: 60%;
+}
+.carousel-indicators {
+  top: 60px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  background-color: var(--offer-jbl-strike-color);
+  width: 32px;
+  height: 32px;
+  border: 1px solid black;
+  border-radius: 50%;
+  top: 8px;
+}
+
+
+
+
+
+
 
 section div .item{
     max-width: 325px;
@@ -18,23 +58,24 @@ section div .item{
   }
   section div .item .item__icon img{
       display: block;
-      width: 60%;
+      width: 60%;!important
   }
   section div .item .item__text{
     text-align: left;
     margin-left: 15px;
+    margin-top: 15px;
     
   }
   section div .item__text h3 {
     font-family: var(--additional-font);
     font-size: 1.3rem;
     font-weight: 700;
-    line-height: 5px;
+    line-height: 15px;
     color: #6c6c6c;
 
   
   }
   section div .item__text p {
     color: #6c6c6c;
-    line-height: 5px;
+    line-height: 15px;
   }

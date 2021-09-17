@@ -1,7 +1,97 @@
-
 /* Tabs for special offers and services section */
+.sm {
+  max-width: 224px;
+}
 
-div .tabs .tabs__head{
+#container-top {
+  max-width: 90%;
+  margin: auto;
+}
+
+div .tabs .tabs__head {
+  margin-bottom: 25px;
+}
+div .tabs .tabs__head .tabs__name {
+  font-size: 1.1rem;
+  color: var(--default-color);
+  text-decoration: none;
+}
+
+#featured,
+#sale,
+#new {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto;
+}
+#tab__item {
+  margin: 5px;
+}
+
+div .tabs__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 680px;
+  margin: auto;
+  padding: 25px;
+  border: 2px solid var(--background-services-color);
+}
+#tabs__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+div .tabs__container .tabs__product-name {
+  color: var(--default-color);
+  font-weight: 700;
+  text-decoration: none;
+}
+div .tabs__container p {
+  font-size: 0.95rem;
+  color: var(--default-color);
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  #container-top {
+    max-width: 1200px;
+    margin: auto;
+  }
+  #featured,
+  #sale,
+  #new {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  div .tabs__container {
+    max-width: 444px;
+  }
+}
+@media (min-width: 991px) {
+  #container-top {
+    max-width: 1200px;
+    margin: auto;
+  }
+  #featured,
+  #sale,
+  #new {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  div .tabs__container {
+    max-width: 332px;
+  }
+}
+
+/* 
+  div .tabs .tabs__head{
     margin-bottom: 25px;
   }
   div .tabs .tabs__head .tabs__name{
@@ -43,4 +133,4 @@ div .tabs .tabs__head{
     font-weight: 700;
     
   }
-  
+   */
