@@ -7,7 +7,6 @@ section div .banner__text {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /* overflow-wrap: break-word; */
 }
 
 div .banner__text h1 {
@@ -81,7 +80,8 @@ div .links__shop span::after {
   }
 }
 @media (min-width: 768px) {
-  .container-top {
+  .container-top,
+  .container-top_flex {
     max-width: 785px;
   }
 
@@ -150,7 +150,8 @@ div .links__shop span::after {
   }
 }
 @media (min-width: 1280px) {
-  .container-top {
+  .container-top,
+  .container-top_flex {
     min-width: 1120px;
     max-width: 60%;
     /* max-width: 1500px; */

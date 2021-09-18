@@ -7,16 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" href="img/icons/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main-style.css">
 </head>
 
 <body>
     <!--Додаткова сторінка з продуктом -->
-    <div class="container">
-        <header>
-            <!--Контакти-->
 
-            <div class="contacts contacts_white">
+    <header>
+        <!--Контакти-->
+
+        <div class="contacts contacts_white">
+            <div class="container-top container-top_card ">
                 <div class="container-top_contacts">
                     <div class="contacts__item contacts__item_black">
                         <span class="contacts__cellphone contacts__cellphone_white">Customer Care:</span>
@@ -28,79 +31,82 @@
                     </div>
                 </div>
             </div>
-            <!--Навігація-->
-            <section class="banner-bg banner-bg_white">
-                <div class="container-top container-top_flex">
-                    <nav class="navigation">
-                        <div class="navigation-logo">
-                            <a href="index.html"><img width="150" src="img/logo.svg" alt="logo"></a>
-                            <a href=""><img class="navigation__burger-button" src="img/icons/burger.png"
-                                    alt="burger logo"></a>
-                        </div>
-                        <div class="navigation-pages">
-                            <a href="" class="navigations__headphones">Headphones</a>
-                            <a href="" class="navigations__speakers">Speakers</a>
-                            <a href="" class="navigations__news">News</a>
-                            <a href="" class="navigations__testimonials">Testimonials</a>
-                        </div>
-                        <div class="navigation-social">
-                            <a href="https://www.facebook.com/" target="blank"><img width="50"
-                                    src="img/icons/facebook-icon.png" alt="facebook"></a>
-                            <a href="https://www.instagram.com/" target="blank"><img width="50"
-                                    src="img/icons/insta-icon.png" alt="instagram"></a>
-                            <a href="https://twitter.com/" target="blank"><img width="50"
-                                    src="img/icons/twitter-icon.png" alt="twitter"></a>
-                            <a href="https://www.youtube.com/" target="blank"><img width="50"
-                                    src="img/icons/you-toube-icon.png" alt="youtube"></a>
-                        </div>
-                    </nav>
-                </div>
-            </section>
-        </header>
+        </div>
+        <!--Навігація-->
+        <section class="banner-bg_white">
 
-        <!--сторінка з продуктом-->
-
-        <section class="product-page">
-            <a href="" class="store-homepage">Store homepage</a>
-            <div class="product-picture">
-                <img src="img/sale/airpulse-r.png" alt="product">
-            </div>
-            <div class="product-text">
-                <div class="product__info">
-                    <p class="product__availability"> in stock</p>
-                    <h4 class="product__name">AirPulse BB34</h4>
-                    <p class="product__code">Product code 25</p>
-                    <p class="product__price">$112,00</p>
-                </div>
-                <hr>
-                <div class="product__shopping">
-                    <div class="product__quantity"></div>
-                    <div class="product__button">
-                        <form action="#" method="get">
-                            <button class="tabs__button tabs__button_big-blue " type="submit">Add to cart</button>
-                        </form>
+            <div class="container-top container-top_flex ">
+                <nav class="navigation">
+                    <div class="navigation-logo">
+                        <a href="index.html"><img width="150" src="img/logo.svg" alt="logo"></a>
+                        <a href=""><img class="navigation__burger-button" src="img/icons/burger.png"
+                                alt="burger logo"></a>
                     </div>
-                </div>
-                <div class="product-description">
-                    <p class="product-description__title">DESCRIPTION</p>
-                    <div class="product-description__characteristics">
-                        <p> Don’t let the street noise interrupt your listening
-                            experience. The new AirPulse BB34 headphones remove all external nose and help you enjoy
-                            your
-                            favorite tracks.</p>
-
-                        <p>Specs:</p>
-
-                        <p>Frequency response — 16Hz - 20kHz
-                            Sensitivity — 100 DBSPL@1kHz
-                            Battery life — 24 hours
-                            Charging time — 2 hours
-                            Wireless range — 35 m </p>
+                    <div class="navigation-pages">
+                        <a href="" class="navigations__headphones">Headphones</a>
+                        <a href="" class="navigations__speakers">Speakers</a>
+                        <a href="" class="navigations__news">News</a>
+                        <a href="" class="navigations__testimonials">Testimonials</a>
                     </div>
-                </div>
+                    <div class="navigation-social">
+                        <a href="https://www.facebook.com/" target="blank"><img width="50"
+                                src="img/icons/facebook-icon.png" alt="facebook"></a>
+                        <a href="https://www.instagram.com/" target="blank"><img width="50"
+                                src="img/icons/insta-icon.png" alt="instagram"></a>
+                        <a href="https://twitter.com/" target="blank"><img width="50" src="img/icons/twitter-icon.png"
+                                alt="twitter"></a>
+                        <a href="https://www.youtube.com/" target="blank"><img width="50"
+                                src="img/icons/you-toube-icon.png" alt="youtube"></a>
+                    </div>
+                </nav>
             </div>
+
         </section>
-    </div>
+    </header>
+
+    <!--сторінка з продуктом-->
+
+    <main class="product-page container-top container-top_card">
+        <!-- <a href="" class="store-homepage">Store homepage</a> -->
+        <div class="product-picture">
+            <img src="img/sale/airpulse-r.png" alt="product">
+        </div>
+        <div class="product-text">
+            <div class="product__info">
+                <p class="product__availability"> In stock</p>
+                <h4 class="product__name">AirPulse BB34</h4>
+                <p class="product__code">Product code 25</p>
+                <p class="product__price">$112,00</p>
+            </div>
+            <hr>
+            <div class="product__shopping">
+                <form action="#" method="get">
+                    <input type="number" min="1" max="10" name="product__quantity" required>
+                    <button class="tabs__button tabs__button_big-blue " type="submit">Add to cart</button>
+                </form>
+            </div>
+            <div class="product-description">
+                <p class="product-description__title">DESCRIPTION</p>
+                <div class="product-description__characteristics">
+                    <p> Don’t let the street noise interrupt your listening
+                        experience. The new AirPulse BB34 headphones remove all external nose and help you enjoy
+                        your favorite tracks.</p>
+
+                    <p class="product__specs">Specs:</p>
+
+                    <p>Frequency response — 16Hz - 20kHz</p>
+                    <p>Sensitivity — 100 DBSPL@1kHz</p>
+                    <p>Battery life — 24 hours</p>
+                    <p>Charging time — 2 hours</p>
+                    <p>Wireless range — 35 m</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
