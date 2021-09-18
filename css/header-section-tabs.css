@@ -36,6 +36,9 @@ div .tabs__container {
   padding: 25px;
   border: 2px solid var(--background-services-color);
 }
+div .tabs__container:hover {
+  box-shadow: 0 0 3px var(--nav-pages-color);
+}
 
 div .tabs__container .tabs__product-name {
   color: var(--default-color);
