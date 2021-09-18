@@ -4,8 +4,8 @@
   margin: 50px auto;
 }
 #carousel__logo-bg {
-  max-width: 50px;
-  min-height: 50px;
+  max-width: 70px;
+  min-height: 70px;
   background-color: var(--background-services-color);
   border-radius: 50%;
   display: flex;
@@ -23,7 +23,13 @@
   height: 10px;
   border-radius: 50%;
   margin: 0 10px;
+  
 }
+.carousel-caption{
+  top: 3px;
+  left: 80px;
+}
+
 .carousel-control-next,
 .carousel-control-prev {
   background-color: var(--offer-jbl-strike-color);
@@ -40,16 +46,17 @@
 
 
 
+
 section div .item{
     max-width: 325px;
-    margin: auto;
+    margin:15px auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
   section div .item .item__icon {
-    max-width: 50px;
-    min-height: 50px;
+    max-width: 70px;
+    min-height: 70px;
     background-color: var(--background-services-color);
     border-radius: 50%;
     display: flex;
