@@ -58,6 +58,9 @@ section div nav .navigation__burger-button {
 }
 
 @media (min-width: 991px) {
+  .container-top_flex {
+    max-width: 944px;
+  }
   section div nav .navigation__burger-button {
     display: none;
   }
