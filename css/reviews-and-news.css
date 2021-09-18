@@ -24,7 +24,7 @@ text-align: center;
 }
 #person1
 {
-  margin: 10px 350px;
+  margin: auto;
   max-width: 100px;
   width: 100px;
   object-position: center;
@@ -46,7 +46,7 @@ text-align: center;
 
 #person2
 {
-  margin: 10px 350px;
+  margin: auto;
   max-width: 100px;
   width: 100px;
   object-position: center;
@@ -68,7 +68,7 @@ text-align: center;
 }
 #person3
 {
-  margin: 10px 350px;
+  margin: auto;
   max-width: 100px;
   width: 100px;
   object-position: center;
@@ -94,6 +94,7 @@ text-align: center;
 {
   margin: auto;
   width: 50px;
+  object-position: center;
 }
 #big-column
 {
@@ -102,7 +103,7 @@ text-align: center;
 .subtitle1> h4{
   text-transform: uppercase;
   color: coral;
-  font-size: 12;
+  font-size: 5;
 }
 .name-article1> p
 {
@@ -124,14 +125,14 @@ text-align: center;
   width: 30px;
 }
 
-#girl-with-headphones
+#girl2
 {
   width: 200px;
 }
 .subtitle2> h4{
   text-transform: uppercase;
   color: coral;
-  font-size: 12;
+  font-size: 5;
 }
 .name-article2> p
 {
@@ -160,7 +161,7 @@ text-align: center;
 .subtitle3> h4{
   text-transform: uppercase;
   color: coral;
-  font-size: 12;
+  font-size: 5;
 }
 .name-article3> p
 {
@@ -180,4 +181,30 @@ text-align: center;
 }
 #line3{
   width: 30px;
+}
+.person{
+  text-align: center;
+  max-width:400px;
+  margin: auto;
+}
+.News{
+  background-color: rgb(241, 235, 235)
+  
+}
+.speakers1{
+  max-width: 300px;
+}
+.speakers2{
+  max-width: 300px;
+}
+.speakers3{
+  max-width: 300px;
+}
+.articles-container{
+  display: flex;
+  margin: 20px, 40px;
+  
+}
+.article-button{
+  display: flex;
 }
