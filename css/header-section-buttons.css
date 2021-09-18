@@ -1,37 +1,42 @@
-
 /* Buttons for Tabs */
 
-div .tabs__container .tabs__button{
+div .tabs__container .tabs__button {
   background-color: var(--button-black-color);
   font-size: 0.7rem;
   font-weight: 700;
   color: var(--light-text-color);
   text-transform: uppercase;
   padding: 15px 25px;
-  
-
+  transition: 0.5s;
 }
-
-
+div .tabs__container .tabs__button:hover {
+  background-color: var(--button-blue-color);
+  box-shadow: 2px 7px 3px var(--button-black-color);
+  transition-duration: 0.7s, 0.3s;
+  transition-delay: 0.1s 0;
+}
+div .tabs__container .tabs__button:active:hover {
+  background-color: var(--button-blue-color);
+  box-shadow: 2px 3px 2px var(--button-black-color);
+  transition-duration: 0.3s;
+}
 
 /* Buttons for special offers */
 
 div .offers-cotainer .offer__button {
-    font-size: 0.75rem;
-    font-weight: 700;
-    line-height: 0.95rem;
-    letter-spacing: 1.001px;
-    text-decoration: none;
-    text-transform: uppercase;
-    
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 0.95rem;
+  letter-spacing: 1.001px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
-div .offers-cotainer .offer__button:after{
-    content: " ";
-    display: inline-block;
-    width: 24px;
-    margin: 0 0 3px 10px; 
+div .offers-cotainer .offer__button:after {
+  content: " ";
+  display: inline-block;
+  width: 24px;
+  margin: 0 0 3px 10px;
 }
-
 
 div .offers-cotainer .offer__button_black {
   color: var(--default-color);
@@ -42,11 +47,10 @@ div .offers-cotainer .offer__button_black:after {
   background: var(--button-blue-color);
 }
 
-
 div .offers-cotainer .offer__button_white {
   color: var(--light-text-color);
 }
-div .offers-cotainer .offer__button_white:after{
+div .offers-cotainer .offer__button_white:after {
   border: 1.5px solid var(--button-colorfull-color);
   background: var(--button-colorfull-color);
 }

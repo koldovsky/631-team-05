@@ -114,8 +114,16 @@ section div nav .navigation__burger-button {
     display: flex;
     justify-content: space-around;
   }
+
   section div nav .navigation-social img {
     max-width: 28px;
     border-radius: 0.4rem;
+  }
+  section div nav .navigation-social a:hover {
+    max-width: 32px;
+    border: 1px solid var(--button-black-color);
+    border-radius: 0.2rem;
+    box-shadow: 0 0 2px var(--offer-jbl-color);
+    transform: scale(2);
   }
 }
