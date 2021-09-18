@@ -1,19 +1,43 @@
-/* .banner-bg_white {
+.container-top_card {
+  margin: auto;
+}
+
+body > main header .contacts_white {
+  background-color: var(--header-contacts-light);
+}
+
+header .contacts__item_black {
+  color: var(--default-color);
+}
+header .contacts__item_black a {
+  text-decoration: none;
+  color: var(--default-color);
+}
+header .contacts__item_black_l {
+  text-align: right;
+}
+header .contacts__item_black a:hover {
+  text-decoration: underline;
+}
+
+.banner-bg_white {
   background-color: var(--light-text-color);
   max-height: 183px;
 }
 body > main.product-page {
-  padding: 90px 0;
+  padding: 90px 24px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 2fr;
-  gap: 10px;
+  gap: 12px;
+  margin: auto;
 }
 
 body > main img {
   display: block;
   width: 100%;
 }
+
 body > main .product__availability {
   color: var(--in-stock-color);
   line-height: 1.53rem;
@@ -36,7 +60,7 @@ body > main .product__price {
 body > main .product__shopping form {
   display: flex;
   justify-content: space-between;
-  margin: 10px 0 50px 0;
+  margin: 25px 0 50px 0;
 }
 body > main .product__shopping .tabs__button {
   color: var(--light-text-color);
@@ -61,9 +85,9 @@ body > main .product-description__title {
   color: var(--default-color);
   line-height: 1.4rem;
   height: auto;
-} */
+}
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
   body > main.product-page {
     padding: 90px 0;
     display: grid;
@@ -71,9 +95,14 @@ body > main .product-description__title {
     grid-template-rows: 1fr;
     gap: 10px;
   }
+  body > main > div.product-text {
+    padding: 0 24px 0 15px;
+  }
+
   .container-top_card {
     max-width: 957px;
     padding: 0 24px;
+    margin: auto;
   }
 }
 @media (min-width: 991px) {
@@ -81,8 +110,18 @@ body > main .product-description__title {
     max-width: 1200px;
   }
 }
+@media (min-width: 1025px) {
+  header div .container-top_contacts {
+    max-width: 1120px;
+    padding: 0 24px;
+  }
+}
 @media (min-width: 1280px) {
   .container-top_card {
     max-width: 60%;
   }
-} */
+  header div .container-top_contacts {
+    min-width: 1120px;
+    padding: 0;
+  }
+}
