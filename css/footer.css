@@ -170,6 +170,7 @@ body {
 .img_footer {
   padding-left: 120px;
   padding-top: 70px;
+  width: 250px;
 }
 
 .contact_text {
@@ -227,11 +228,12 @@ body {
   height: 50px;
   background: rgb(48, 48, 48);
   text-decoration: none;
+  border: none;
 }
 
 input {
   padding-left: 10px;
-  border: none;
+
 }
 
 .buttom_subscribe {
