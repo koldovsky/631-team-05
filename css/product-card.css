@@ -68,7 +68,7 @@ body > main.product-page {
   margin: auto;
 }
 
-body > main img {
+body > main .img-main {
   display: block;
   width: 100%;
 }
