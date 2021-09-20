@@ -4,7 +4,7 @@
 div .offers-cotainer{
     min-height: 781px;
     max-width: 332px;
-    margin: auto;
+    margin: 30px auto 100px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

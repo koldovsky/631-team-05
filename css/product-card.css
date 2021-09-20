@@ -104,6 +104,12 @@ body > main .product__shopping .tabs__button {
   width: 100%;
   margin: 0 5px 0 15px;
   border-radius: 0.2rem;
+  transition: 0.7s;
+}
+body > main .product__shopping .tabs__button:hover {
+  color: var(--light-text-color);
+  background-color: var(--contacts-links-color);
+  transition: 1.5s;
 }
 body > main .product-description__title {
   color: var(--default-color);

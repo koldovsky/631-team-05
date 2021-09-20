@@ -58,8 +58,19 @@ div .links__shop span::after {
   display: inline-block;
   width: 24px;
   margin: 0 0 3px 10px;
-  border: 1.5px solid var(--button-colorfull-color);
-  background: var(--button-colorfull-color);
+  border: 2px solid var(--button-colorfull-color);
+  background-color: var(--button-colorfull-color);
+}
+div .links__shop span:hover:after {
+  border: 2px solid var(--button-after-color);
+  background-color: var(--button-after-color);
+
+  transition: 1.5s;
+}
+div .links__shop span:hover:active:after {
+  background-color: var(--button-after-color);
+  transform: rotate(360deg);
+  transition: 0.5s;
 }
 
 @media (min-width: 381px) {

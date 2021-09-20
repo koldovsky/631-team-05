@@ -37,6 +37,14 @@ div .offers-cotainer .offer__button:after {
   width: 24px;
   margin: 0 0 3px 10px;
 }
+div .offers-cotainer .offer__button:hover:after {
+  transform: rotate(90deg);
+  transition: 1s;
+}
+div .offers-cotainer .offer__button:active:after {
+  transform: rotate(360deg);
+  transition: 0.5s;
+}
 
 div .offers-cotainer .offer__button_black {
   color: var(--default-color);
