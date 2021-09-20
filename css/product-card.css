@@ -1,3 +1,34 @@
+/* Navigation */
+
+div .navbar-brand img {
+  width: 114px;
+}
+
+.navbar-expand-lg {
+  justify-content: space-between;
+}
+.navbar-collapse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav div.nav-socials {
+  margin: 25px 0;
+}
+nav div .navbar-nav {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--nav-pages-color);
+  height: auto;
+}
+
+nav div .nav-item a img {
+  max-width: 28px;
+  border-radius: 0.4rem;
+}
+
+/* Product page */
+
 .container-top_card {
   margin: auto;
 }
@@ -108,6 +139,58 @@ body > main .product-description__title {
 @media (min-width: 991px) {
   .container-top_card {
     max-width: 1200px;
+    margin: 15px 0;
+  }
+  .navbar-expand-lg {
+    padding: 15px 0;
+    margin-bottom: 35px;
+  }
+  .container-fluid {
+    max-width: 1120px;
+    margin: auto;
+    padding: 0 24px;
+  }
+  div .navbar-nav {
+    display: flex;
+    justify-content: center;
+  }
+  div .navbar-nav li {
+    padding: 0 15px;
+  }
+
+  #navbar-navigation .navbar-nav a {
+    position: relative;
+    padding: 0;
+  }
+  #navbar-navigation .navbar-nav a::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 0.1rem;
+    background-color: var(--button-black-color);
+    transition: width 0.2s ease-in;
+  }
+  #navbar-navigation .navbar-nav a:hover:after {
+    width: 100%;
+  }
+  .nav-socials {
+    max-width: 200px;
+  }
+  .nav-socials div.nav-item {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  nav div.nav-socials a:hover {
+    max-width: 32px;
+    border: 1px solid var(--button-black-color);
+    border-radius: 0.2rem;
+    box-shadow: 0 0 2px var(--offer-jbl-color);
+    transform: scale(2);
   }
 }
 @media (min-width: 1025px) {
@@ -121,6 +204,10 @@ body > main .product-description__title {
     max-width: 60%;
   }
   header div .container-top_contacts {
+    min-width: 1120px;
+    padding: 0;
+  }
+  .container-fluid {
     min-width: 1120px;
     padding: 0;
   }

@@ -29,4 +29,5 @@
   font-family: var(--bs-body-font-family);
   --bs-body-font-size: 17px;
   font-size: var(--bs-body-font-size);
+  --bs-light-rgb: #fff;
 }
