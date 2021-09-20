@@ -29,6 +29,10 @@ nav div .nav-item a img {
 
 /* Product page */
 
+.header-item {
+  margin-bottom: 70px;
+}
+
 .container-top_card {
   margin: auto;
 }
@@ -143,6 +147,10 @@ body > main .product-description__title {
   }
 }
 @media (min-width: 991px) {
+  .container-top_contacts {
+    max-width: 1120px;
+    padding: 0 24px;
+  }
   .container-top_card {
     max-width: 1200px;
     margin: 15px 0;

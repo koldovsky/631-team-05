@@ -9,8 +9,11 @@
 @import url(header-section-special-offers.css);
 @import url(header-section-buttons.css);
 @import url(product-card.css);
-@import url(secondpage.css);
+
 /* header section css end */
 
 @import url(reviews-and-news.css);
 @import url(speakers-and-video.css);
+
+@import url(secondpage.css);
+@import url(footer.css);
