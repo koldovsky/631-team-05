@@ -49,7 +49,7 @@ header .contacts__item_black a:hover {
 }
 
 @media (min-width: 991px) {
-  header .contacts {
+  header .contactss {
     display: block;
   }
   header div .container-top_contacts {
