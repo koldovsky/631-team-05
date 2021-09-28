@@ -1,6 +1,6 @@
 /* Contacts styles */
 
-header .contacts {
+header .contactss {
   max-width: 100%;
   display: none;
 }
@@ -49,14 +49,14 @@ header .contacts__item_black a:hover {
 }
 
 @media (min-width: 991px) {
-  header .contacts {
+  header .contactss {
     display: block;
   }
   header div .container-top_contacts {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-template-rows: 1fr;
-    max-width: 978px;
+    max-width: 1120px;
     margin: 0 auto;
   }
 }

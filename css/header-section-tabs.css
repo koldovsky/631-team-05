@@ -20,11 +20,11 @@ div .tabs .tabs__head .tabs__name {
 #featured,
 #sale,
 #new {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: auto;
+  margin: auto; */
 }
 #tab__item {
   margin: 5px;
@@ -65,13 +65,12 @@ div .tabs__container p {
     flex-wrap: wrap;
   }
   div .tabs__container {
-    max-width: 444px;
+    max-width: 45%;
   }
 }
 @media (min-width: 991px) {
-  #container-top {
-    max-width: 1200px;
-    margin: auto;
+  #nav-tabContent {
+    margin: 0 24px;
   }
   #featured,
   #sale,
@@ -79,10 +78,10 @@ div .tabs__container p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   div .tabs__container {
-    max-width: 332px;
+    max-width: 24%;
   }
 }
 

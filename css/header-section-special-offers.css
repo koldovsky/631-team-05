@@ -3,8 +3,8 @@
 
 div .offers-cotainer{
     min-height: 781px;
-    max-width: 332px;
-    margin: auto;
+    max-width: 90%;
+    margin: 30px auto 100px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -119,6 +119,3 @@ div .offers-cotainer{
       min-height: auto;
      
   }
-  
-  
-  
