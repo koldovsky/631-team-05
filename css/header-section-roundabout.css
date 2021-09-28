@@ -1,9 +1,11 @@
-/* Roundabout with services */
-#carousel-container {
-  max-width: 60%;
-  margin: 50px auto;
+section div .item {
+  max-width: 325px;
+  margin: 15px auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
-#carousel__logo-bg {
+section div .item .item__icon {
   max-width: 70px;
   min-height: 70px;
   background-color: var(--background-services-color);
@@ -12,77 +14,27 @@
   justify-content: center;
   align-items: center;
 }
-#carousel__logo-bg img {
+section div .item .item__icon img {
+  display: block;
   width: 60%;
 }
-.carousel-indicators {
-  top: 60px;
+section div .item .item__text {
+  text-align: left;
+  margin-left: 15px;
+  margin-top: 15px;
 }
-.carousel-indicators [data-bs-target] {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin: 0 10px;
-  
+section div .item__text h3 {
+  font-family: var(--additional-font);
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 15px;
+  color: #6c6c6c;
 }
-.carousel-caption{
-  top: 3px;
-  left: 80px;
+section div .item__text p {
+  color: #6c6c6c;
+  line-height: 15px;
 }
-
-.carousel-control-next,
-.carousel-control-prev {
-  background-color: var(--offer-jbl-strike-color);
-  width: 32px;
-  height: 32px;
-  border: 1px solid black;
-  border-radius: 50%;
-  top: 8px;
+.services__button-next .services__button-prev {
+  font-size: 1.5rem;
+  color: black;
 }
-
-
-
-
-
-
-
-
-section div .item{
-    max-width: 325px;
-    margin:15px auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  section div .item .item__icon {
-    max-width: 70px;
-    min-height: 70px;
-    background-color: var(--background-services-color);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  section div .item .item__icon img{
-      display: block;
-      width: 60%;!important
-  }
-  section div .item .item__text{
-    text-align: left;
-    margin-left: 15px;
-    margin-top: 15px;
-    
-  }
-  section div .item__text h3 {
-    font-family: var(--additional-font);
-    font-size: 1.3rem;
-    font-weight: 700;
-    line-height: 15px;
-    color: #6c6c6c;
-
-  
-  }
-  section div .item__text p {
-    color: #6c6c6c;
-    line-height: 15px;
-  }
