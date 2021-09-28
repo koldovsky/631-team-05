@@ -1,4 +1,5 @@
-
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700;&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap");
 
 
   .cards-container {
@@ -8,9 +9,82 @@
  .title-our-customer-say> h2
  {
    text-align: center;
+   margin-top: 30px;
+   margin-bottom: 30px;
  }
 .logo-main{
   object-position: center;
+  
+}
+#logoall{
+  width: 190px;
+  border: solid;
+  border-top-width: 30px;
+  border-width: 30px;
+  border-bottom-width: 30px;
+  border-color: white;
+  background-color: white;
+  margin-right: 18px;
+}
+#logoalla{
+  width: 190px;
+  border: solid;
+  border-top-width: 30px;
+  border-width: 30px;
+  border-bottom-width: 7px;
+  border-color: white;
+  background-color: white;
+  margin-right: 18px;
+  
+}
+
+#logoalls{
+  width: 190px;
+  border: solid;
+  border-top-width: 30px;
+  border-width: 30px;
+  border-bottom-width: 25px;
+  border-color: white;
+  background-color: white;
+  margin-right: 18px;
+}
+#logoallsen{
+  width: 190px;
+  border: solid;
+  border-top-width: 30px;
+  border-width: 30px;
+  border-bottom-width: 28px;
+  border-color: white;
+  background-color: white;
+  margin-right: 18px;
+}
+#logoallm{
+  width: 190px;
+  border: solid;
+  border-top-width: 30px;
+  border-width: 30px;
+  border-bottom-width: 17px;
+  border-color: white;
+  background-color: white;
+  margin-right: 18px;
+  
+}
+#logoallj{
+  width: 120px;
+  border: solid;
+  border-top-width: 30px;
+  border-width: 30px;
+  border-bottom-width: 17px;
+  border-color: white;
+  background-color: white;
+  margin-right: 18px;
+  
+  
+}
+.cards-container{
+  background-color: rgb(241, 235, 235);
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 .subtitle-customer-say> p
 {
@@ -18,10 +92,19 @@ text-align: center;
 }
 #logo-main
 {
+  margin-top: 40px;
   margin: auto;
-  width: 50px;
+  width: 40px;
+}
+#logo-main2{
+  margin-top: 20px;
+  width: 40px;
   object-position: center;
 }
+.subtitle-customer-say> p{
+  margin-top: 30px;
+}
+
 #person1
 {
   margin: auto;
@@ -98,7 +181,7 @@ text-align: center;
 }
 #big-column
 {
-  width: 200px;
+  width: 250px;
 }
 .subtitle1> h4{
   text-transform: uppercase;
@@ -109,9 +192,11 @@ text-align: center;
 {
   font-weight: 700;
   text-align: left;
+  font-family: PT Sans,sans-serif;
 }
 .paragraph1> p{
   text-align: left;
+  font-size: 17px;
 }
 .article-more> a{
   text-transform: uppercase;
@@ -127,7 +212,7 @@ text-align: center;
 
 #girl2
 {
-  width: 200px;
+  width: 250px;
 }
 .subtitle2> h4{
   text-transform: uppercase;
@@ -138,6 +223,7 @@ text-align: center;
 {
   font-weight: 700;
   text-align: left;
+  font-family: PT Sans,sans-serif;
 }
 .paragraph2> p{
   text-align: left;
@@ -145,7 +231,9 @@ text-align: center;
 .article-button> a{
   text-transform: uppercase;
   color:black;
-  text-decoration: none;
+  font-size: 9px;
+  font-weight: bold;
+
 }
 .article-button:hover{
   text-decoration: underline;
@@ -156,7 +244,8 @@ text-align: center;
 
 #small-column
 {
-  width: 200px;
+  width: 250px;
+  
 }
 .subtitle3> h4{
   text-transform: uppercase;
@@ -167,6 +256,7 @@ text-align: center;
 {
   font-weight: 700;
   text-align: left;
+  font-family: PT Sans, sans-serif;
 }
 .paragraph3> p{
   text-align: left;
@@ -192,20 +282,108 @@ text-align: center;
   
 }
 .speakers1{
-  max-width: 300px;
+  display: block;
+  max-width: 350px;
+  
 }
 .speakers2{
-  max-width: 300px;
+  max-width: 350px;
 }
 .speakers3{
-  max-width: 300px;
+  max-width: 350px;
 }
 .articles-container{
-  margin: 20px, 40px;
+  margin-left: 330px;
+  margin-right: 300px;
   display: flex;
   
   
 }
 .article-button{
   display: flex;
+  
 }
+.speakers1{
+  margin-right: 30px;
+}
+.speakers2{
+  margin-right: 30px;
+}
+.popular-article> h2{
+  
+  font-weight: 900;
+}
+.title-our-customer-say> h2{
+  font-weight: 900;
+  margin-top: 50px;
+}
+.name-article1{
+  font-size: 14px;
+}
+.name-article2{
+  font-size: 14px;
+}
+.name-article3{
+  font-size: 14px;
+}
+.paragraph1> p{
+  font-size: 11px;
+}
+.paragraph2> p{
+  font-size: 11px;
+}
+.paragraph3> p{
+  font-size: 11px;
+}
+.subtitle1> h4{
+  font-size: 9px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.subtitle2> h4{
+  font-size: 9px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.subtitle3> h4{
+  font-size: 9px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.small-column{
+  margin-top: 20px;
+}
+.big-column{
+  margin-top: 20px;
+}
+.headphones{
+  margin-top: 20px;
+}
+.News{
+  margin-top: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+.line2{
+  margin-left: 5px;
+  padding-bottom: 20px;
+}
+.line1{
+  margin-left: 5px;
+  padding-top: 2px;
+}
+.line3{
+  margin-left: 5px;
+  padding-top: 2px;
+}
+.subtitle-pop-art> p{
+margin-top: 20px;
+font-size: 14px;
+}
+.brand-logos{
+margin-top: 30px;
+}
+
+
+
