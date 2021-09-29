@@ -1,5 +1,9 @@
-.services {
+section.first-section {
+  margin-top: 50px;
+}
+section .services {
   position: relative;
+  margin-bottom: 50px;
 }
 
 section div .item {
@@ -42,32 +46,16 @@ section div .item__text p {
   display: flex;
   justify-content: space-between;
 }
-.services__button-next,
-.services__button-prev {
-  background-color: var(--nav-pages-color);
-  opacity: 0.5;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-}
-.services__button-next {
-  position: absolute;
-  top: 35%;
-  right: -25px;
-}
-.services__button-prev {
-  position: absolute;
-  top: 35%;
-  left: -25px;
-}
 
 .services__button-next span img {
   width: 25px;
   position: absolute;
-  left: 1px;
+  top: 35%;
+  right: -25px;
 }
 .services__button-prev span img {
   width: 25px;
   position: absolute;
-  right: 1px;
+  top: 35%;
+  left: -25px;
 }

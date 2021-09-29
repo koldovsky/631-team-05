@@ -35,12 +35,18 @@ div .offers-cotainer{
     color: var(--offer-strike-color);
     text-decoration: line-through;
   }
-  div .offers-cotainer .offer-jbl .offer__strike {
+  div .offers-cotainer .offer-jbl .offer__strike, .offer__date {
     font-size: 1.3em;
     font-family: var(--additional-font);
-    font-weight: 700;
-     
+    font-weight: 700; 
     color: var(--offer-jbl-color);
+  }
+   div .offers-cotainer .offer-jbl .offer__date {
+    font-size: 2rem;
+    font-family: var(--additional-font);
+    font-weight: 700;
+    line-height: 0.8; 
+    color: var(--light-text-color);
   }
   div .offers-cotainer .offer-jbl .offer__text {
     color: var(--offer-jbl-strike-color);
@@ -71,6 +77,11 @@ div .offers-cotainer{
      line-height: 1.95rem;
      height: auto;
   }
+  div .offers-cotainer .offer-special h2.offer-special__time-left {
+     font-size: 1.8rem; 
+     line-height: 0.8rem;
+  }
+  
   
   @media (min-width: 768px){
     .container-top {
@@ -117,5 +128,4 @@ div .offers-cotainer{
     
     div .offers-cotainer .offer-special{
       min-height: auto;
-     
-  }
+    }

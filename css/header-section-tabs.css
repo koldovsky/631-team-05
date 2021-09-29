@@ -56,9 +56,8 @@ div .tabs__container p {
     max-width: 1200px;
     margin: auto;
   }
-  #featured,
-  #sale,
-  #new {
+
+  .tabs__content {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -72,9 +71,7 @@ div .tabs__container p {
   #nav-tabContent {
     margin: 0 24px;
   }
-  #featured,
-  #sale,
-  #new {
+  .tabs__content {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -85,47 +82,36 @@ div .tabs__container p {
   }
 }
 
-/* 
-  div .tabs .tabs__head{
-    margin-bottom: 25px;
-  }
-  div .tabs .tabs__head .tabs__name{
-    font-size: 1.1rem;
-    color: var(--default-color);
-    text-decoration: none;
-  }
-  
-  div .tabs__content {
-    max-width: 332px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: minmax(332px, 1fr);
-    grid-template-rows: repeat (4, 1fr);
-    grid-gap: 15px;
-  }
-  div .tabs__container{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 332px;
-    margin: auto;
-    padding: 25px;
-    border: 2px solid var(--background-services-color);
-  }
-  div .tabs__container .tabs__image img{
-    display: block;
-    min-width: 275px;
-    max-width: 100%;
-  }
-  div .tabs__container .tabs__product-name {
-    color: var(--default-color);
-    font-weight: 700;
-    text-decoration: none;
-  }
-  div .tabs__container p {
-    font-size: 0.95rem;
-    color: var(--default-color);
-    font-weight: 700;
-    
-  }
-   */
+div .tabs .tabs__head {
+  margin-bottom: 25px;
+}
+div .tabs .tabs__head .tabs__name {
+  font-size: 1.1rem;
+  color: var(--default-color);
+  text-decoration: none;
+}
+
+div .tabs__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 332px;
+  margin: auto;
+  padding: 25px;
+  border: 2px solid var(--background-services-color);
+}
+div .tabs__container .tabs__image img {
+  display: block;
+  min-width: 275px;
+  max-width: 100%;
+}
+div .tabs__container .tabs__product-name {
+  color: var(--default-color);
+  font-weight: 700;
+  text-decoration: none;
+}
+div .tabs__container p {
+  font-size: 0.95rem;
+  color: var(--default-color);
+  font-weight: 700;
+}
