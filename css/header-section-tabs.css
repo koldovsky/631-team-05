@@ -96,7 +96,7 @@ div .tabs__container {
   flex-direction: column;
   align-items: flex-start;
   max-width: 332px;
-  margin: auto;
+  margin: 25px;
   padding: 25px;
   border: 2px solid var(--background-services-color);
 }
@@ -114,4 +114,10 @@ div .tabs__container p {
   font-size: 0.95rem;
   color: var(--default-color);
   font-weight: 700;
+}
+#container-top > div.tabs > div.tabs__body > div.tabs__content {
+  display: none;
+}
+#container-top > div.tabs > div.tabs__body > div.tabs__content.active {
+  display: flex;
 }
