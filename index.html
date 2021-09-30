@@ -32,7 +32,7 @@
         </div>
         <!--Navigation-->
         <section class="banner-bg banner-bg_origin">
-            <div class="container-top container-top_flex">
+            <div class="container-section">
                 <nav class="navigation">
                     <div class="navigation-logo">
                         <a href="index.html"><img width="150" src="img/logo.svg" alt="logo"></a>
@@ -74,169 +74,26 @@
     <main>
         <!--Special offers and services section-->
         <section class="first-section">
-            <div class="services">
+            <div class="services container">
                 <div class="services__type">
-
                 </div>
-                <div class="services__button-next">Next</div>
-                <div class="services__button-prev">Prev</div>
+                <div class="services__button-next"><span><img src="img/icons/right-arrow.png" alt="next arrow"></span>
+                </div>
+                <div class="services__button-prev"><span><img src="img/icons/back-arrow.png" alt="prev arrow"></span>
+                </div>
             </div>
 
             <!--Tabs and services section-->
             <div id="container-top">
 
-                <nav>
-                    <div class="nav nav-tabs " id="nav-tab" role="tablist">
-                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
-                            data-bs-target="#featured" type="button" role="tab" aria-controls="nav-home"
-                            aria-selected="true">Featured</button>
-                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#sale"
-                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Sale</button>
-                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#new"
-                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false">New</button>
-                    </div>
-                </nav>
-                <div class="tab-content" id="nav-tabContent">
-                    <div class=" tab-pane fade show active row" id="featured" role="tabpanel"
-                        aria-labelledby="nav-home-tab">
-                        <article class="tabs__container col-xs-12 col-md-6 col-lg-3 " id="tab__item">
-                            <a class="tabs__image" href="product-card.html"><img class="d-block img-fluid mx-auto"
-                                    id="tabs__img" src="img/featured/jbl-rr.png" alt="jbl RR-56"></a>
-                            <a class="tabs__product-name" href="product-card.html">JBL RR-56</a>
-                            <p>$110,00</p>
-                            <form action="#" method="get">
-                                <button class="tabs__button" type="submit">Add to cart</button>
-                            </form>
-                        </article>
-
-                        <article class="tabs__container col-xs-12 col-md-6 col-lg-3" id="tab__item">
-                            <a class="tabs__image" href="#"><img class="d-block img-fluid mx-auto"
-                                    src="img/featured/sennheiser-sn.png" alt="Sennheiser SN-67"></a>
-                            <a class="tabs__product-name" href="">Sennheiser SN-67</a>
-                            <p>$213,00</p>
-                            <form action="#" method="get">
-                                <button class="tabs__button" type="submit">Add to cart</button>
-                            </form>
-                        </article>
-
-                        <article class="tabs__container col-xs-12 col-md-6 col-lg-3" id="tab__item">
-                            <a class="tabs__image" href="#"><img class="d-block img-fluid mx-auto"
-                                    src="img/featured/gbl-gt.png" alt="JBL GT-345"></a>
-                            <a class="tabs__product-name" href="">JBL GT-345</a>
-                            <p>$120,00</p>
-                            <form action="#" method="get">
-                                <button class="tabs__button" type="submit">Add to cart</button>
-                            </form>
-                        </article>
-
-                        <article class="tabs__container col-xs-12 col-md-6 col-lg-3" id="tab__item">
-                            <a class="tabs__image" href="#"><img class="d-block img-fluid mx-auto"
-                                    src="img/featured/sony-s.png" alt="Sony S890"></a>
-                            <a class="tabs__product-name" href="">Sony S890</a>
-                            <p>$259,00</p>
-                            <form action="#" method="get">
-                                <button class="tabs__button" type="submit">Add to cart</button>
-                            </form>
-                        </article>
-                    </div>
-                    <div class="d-flex flex-row tab-pane fade row" id="sale" role="tabpanel"
-                        aria-labelledby="nav-profile-tab">
-                        <article class="tabs__container col-xs-12 col-md-6 col-lg-3" id="tab__item">
-                            <a class="tabs__image" href="#"><img class="d-block img-fluid mx-auto sm"
-                                    src="img/sale/marshall-dr.png" alt="Marshal DR67"></a>
-                            <a class="tabs__product-name" href="">Marshal DR67</a>
-                            <p>$459,00</p>
-                            <form action="#" method="get">
-                                <button class="tabs__button" type="submit">Add to cart</button>
-                            </form>
-                        </article>
-
-                        <article class="tabs__container col-xs-12 col-md-6 col-lg-3" id="tab__item">
-                            <a class="tabs__image" href="#"><img class="d-block img-fluid mx-auto"
-                                    src="img/sale/v-moda.png" alt="V-MODA ER65"></a>
-                            <a class="tabs__product-name" href="">V-MODA ER65</a>
-                            <p>$80,00</p>
-                            <form action="#" method="get">
-                                <button class="tabs__button" type="submit">Add to cart</button>
-                            </form>
-                        </article>
-
-                        <article class="tabs__container col-xs-12 col-md-6 col-lg-3" id="tab__item">
-                            <a class="tabs__image" href="#"><img class="d-block img-fluid mx-auto"
-                                    src="img/sale/bose-g.png" alt="Bose G656-A"></a>
-                            <a class="tabs__product-name" href="">Bose G656-A</a>
-                            <p>$65,00</p>
-                            <form action="#" method="get">
-                                <button class="tabs__button" type="submit">Add to cart</button>
-                            </form>
-                        </article>
-
-                        <article class="tabs__container col-xs-12 col-md-6 col-lg-3" id="tab__item">
-                            <a class="tabs__image" href="#"><img class="d-block img-fluid mx-auto sm"
-                                    src="img/sale/airpulse-r.png" alt="AirPulse R255"></a>
-                            <a class="tabs__product-name" href="">AirPulse R255</a>
-                            <p>$185,00</p>
-                            <form action="#" method="get">
-                                <button class="tabs__button" type="submit">Add to cart</button>
-                            </form>
-                        </article>
-
-                    </div>
-                    <div class="d-flex flex-row tab-pane fade row" id="new" role="tabpanel"
-                        aria-labelledby="nav-contact-tab">
-                        <article class="tabs__container col-xs-12 col-md-6 col-lg-3" id="tab__item">
-                            <a class="tabs__image" href="#"><img class="d-block img-fluid mx-auto"
-                                    src="img/new/sony-y.png" alt="Sony YT555"></a>
-                            <a class="tabs__product-name" href="">Sony YT555</a>
-                            <p>$140,00</p>
-                            <form action="#" method="get">
-                                <button class="tabs__button" type="submit">Add to cart</button>
-                            </form>
-                        </article>
-
-                        <article class="tabs__container col-xs-12 col-md-6 col-lg-3" id="tab__item">
-                            <a class="tabs__image" href="#"><img class="d-block img-fluid mx-auto"
-                                    src="img/new/sony-tt.png" alt="Sony TT56"></a>
-                            <a class="tabs__product-name" href="">Sony TT56</a>
-                            <p>$98,00</p>
-                            <form action="#" method="get">
-                                <button class="tabs__button" type="submit">Add to cart</button>
-                            </form>
-                        </article>
-
-                        <article class="tabs__container col-xs-12 col-md-6 col-lg-3" id="tab__item">
-                            <a class="tabs__image" href="#"><img class="d-block img-fluid mx-auto"
-                                    src="img/new/jbl-br.png" alt="JBL BR-55"></a>
-                            <a class="tabs__product-name" href="">JBL BR-55</a>
-                            <p>$110,00</p>
-                            <form action="#" method="get">
-                                <button class="tabs__button" type="submit">Add to cart</button>
-                            </form>
-                        </article>
-
-                        <article class="tabs__container col-xs-12 col-md-6 col-lg-3" id="tab__item">
-                            <a class="tabs__image" href="#"><img class="d-block img-fluid mx-auto"
-                                    src="img/new/jbl-wn.png" alt="JBL 334WN"></a>
-                            <a class="tabs__product-name" href="">JBL 334WN</a>
-                            <p>$140,00</p>
-                            <form action="#" method="get">
-                                <button class="tabs__button" type="submit">Add to cart</button>
-                            </form>
-                        </article>
-                    </div>
-                </div>
-
-
-                <!-- <div class="tabs">
+                <div class="tabs">
                     <div class="tabs__head">
-                        <a href="#tab_01" class="tabs__name">Featured</a>
-                        <a href="#tab_02" class="tabs__name">Sale</a>
-                        <a href="#tab_03" class="tabs__name">New</a>
+                        <a href="#" data-tab-name="1" class="tabs__name active">Featured</a>
+                        <a href="#" data-tab-name="2" class="tabs__name">Sale</a>
+                        <a href="#" data-tab-name="3" class="tabs__name">New</a>
                     </div>
                     <div class="tabs__body">
-
-
-                        <div id="tab_01" class="tabs__content">
+                        <div data-tab-content="1" class="tabs__content active">
                             <article class="tabs__container">
                                 <a class="tabs__image" href="product-card.html"><img src="img/featured/jbl-rr.png"
                                         alt="jbl RR-56"></a>
@@ -277,11 +134,11 @@
                         </div>
 
 
-                        <div id="tab_02" class="tabs__content">
+                        <div data-tab-content="2" class="tabs__content">
                             <article class="tabs__container">
-                                <a class="tabs__image" href="#"><img src="img/sale/marshall-dr.png"
+                                <a class="tabs__image sm" href="#"><img src="img/sale/marshall-dr.png"
                                         alt="Marshal DR67"></a>
-                                <a class="tabs__product-name" href="">Marshal DR67</a>
+                                <a class="tabs__product-name " href="">Marshal DR67</a>
                                 <p>$459,00</p>
                                 <form action="#" method="get">
                                     <button class="tabs__button" type="submit">Add to cart</button>
@@ -307,7 +164,7 @@
                             </article>
 
                             <article class="tabs__container">
-                                <a class="tabs__image" href="#"><img src="img/sale/airpulse-r.png"
+                                <a class="tabs__image sm" href="#"><img src="img/sale/airpulse-r.png"
                                         alt="AirPulse R255"></a>
                                 <a class="tabs__product-name" href="">AirPulse R255</a>
                                 <p>$185,00</p>
@@ -318,7 +175,7 @@
                         </div>
 
 
-                        <div id="tab_03" class="tabs__content">
+                        <div data-tab-content="3" class="tabs__content">
                             <article class="tabs__container">
                                 <a class="tabs__image" href="#"><img src="img/new/sony-y.png" alt="Sony YT555"></a>
                                 <a class="tabs__product-name" href="">Sony YT555</a>
@@ -356,17 +213,19 @@
                             </article>
                         </div>
                     </div>
-                </div> -->
+                </div>
                 <div class="offers-cotainer">
                     <div class="offer-jbl">
                         <h2>JBL Speakers</h2>
                         <p class="offer__strike"><span>$300.00</span> $250.00</p>
+                        <p class="offer__date"> </p>
                         <p class="offer__text">Special price on a variety of JBL loudspeakers.</p>
                         <a class="offer__button offer__button_black" href=""><span>LEARN MORE</span></a>
                     </div>
                     <div class="offer-special">
                         <p>SPECIAL OFFER</p>
                         <h2>Headphones Sale</h2>
+                        <h2 id="112" class="offer-special__time-left"></h2>
                         <a class="offer__button offer__button_white" href=""><span>LEARN MORE</span></a>
                     </div>
                 </div>
@@ -711,6 +570,66 @@
             <div class="reviews__type"> </div>;
                 <div class="reviews__button-1"> Тиць</div>;
             <div class="reviews__button-2">Тиць</div>;
+            <div class="title-our-customer-say">
+                <h2>Our Customers Say</h2>
+            </div>
+            <div class="logo-main" id="logo-main">
+                <img src="img/logo-main.svg" alt="Main" id="logo-main">
+            </div>
+            <div class="subtitle-customer-say">
+                <p>We're so excited to receive great testimonials from our customers!</p>
+            </div>
+        </section>
+        <section class="person">
+            <div class="person1">
+                <img src="img/man-with-headphones.png" id="person1" alt="${person.name}">
+            </div>
+            <div class="name1">
+                <h3>Dean Williams</h3>
+            </div>
+            <div class="text1">
+                <p>"I often listen to music, and for me, first of all, it is important that the headphones sit
+                    comfortably on my head. In the Basside store, Ive found exactly what i needed at a very nice price.
+                    The customer servise also works great, and these guys helped me with the choice."</p>
+            </div>
+            <div class="date1">
+                <h4>December 15,2020</h4>
+            </div>
+        </section>
+
+        <br>
+        <section class="person">
+            <div class="person2">
+                <img src="img/girl-with-headphones.png" alt="girl-with-headphones" id="person2">
+            </div>
+            <div class="name2">
+                <h3>Jessica Gordons</h3>
+            </div>
+            <div class="text2">
+                <p>"I often listen to music, and for me, first of all, it is important that the headphones sit
+                    comfortably on my head. In the Basside store, Ive found exactly what i needed at a very nice price.
+                    The customer servise also works great, and these guys helped me with the choice."</p>
+            </div>
+            <div class="date2">
+                <h4>March 28,2021</h4>
+            </div>
+        </section>
+        <br>
+        <section class="person">
+            <div class="person3">
+                <img src="img/smiling-man.png" alt="smiling-man" id="person3">
+            </div>
+            <div class="name3">
+                <h3>Eric Smith</h3>
+            </div>
+            <div class="text1">
+                <p>"I often listen to music, and for me, first of all, it is important that the headphones sit
+                    comfortably on my head. In the Basside store, Ive found exactly what i needed at a very nice price.
+                    The customer servise also works great, and these guys helped me with the choice."</p>
+            </div>
+            <div class="date3">
+                <h4>May 29,2021</h4>
+            </div>
         </section>
 
 
@@ -990,6 +909,9 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
     <script src="js/roundabout.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/countdown-clock-to-date.js"></script>
+    <script src="js/countdown-clock-time.js"></script>
     <script src="js/roundreviews.js"></script>
 </body>
 

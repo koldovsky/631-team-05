@@ -49,9 +49,22 @@
 
   let currentSlide = 0;
 
-  function showCurrentSlide() {
+  function showCurrentSlide(person) {
     const slideContainer = document.querySelector(".services__type");
-    slideContainer.innerHTML = slides[currentSlide];
+    let html = "";
+    html = slides[currentSlide];
+    if (window.innerWidth > 767) {
+      const nextSlide = currentSlide + 1 < slides.length ? currentSlide + 1 : 0;
+      html += slides[nextSlide];
+      if (window.innerWidth > 991) {
+        const nextTwoSlide = nextSlide + 1 < slides.length ? nextSlide + 1 : 0;
+        html += slides[nextTwoSlide];
+        const nextThreeSlide =
+          nextTwoSlide + 1 < slides.length ? nextTwoSlide + 1 : 0;
+        html += slides[nextThreeSlide];
+      }
+    }
+    slideContainer.innerHTML = html;
   }
 
   function nextSlide() {
@@ -65,8 +78,9 @@
     showCurrentSlide();
   }
 
-  setInterval(nextSlide, 5000);
+  //   setInterval(nextSlide, 5000);
   showCurrentSlide();
+  window.addEventListener("resize", showCurrentSlide);
 
   const btnNext = document.querySelector(".services__button-next");
   btnNext.addEventListener("click", nextSlide);

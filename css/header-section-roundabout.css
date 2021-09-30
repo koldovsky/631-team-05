@@ -1,3 +1,13 @@
+section .services container {
+}
+section.first-section {
+  margin-top: 50px;
+}
+section .services {
+  position: relative;
+  margin-bottom: 50px;
+}
+
 section div .item {
   max-width: 325px;
   margin: 15px auto;
@@ -34,7 +44,28 @@ section div .item__text p {
   color: #6c6c6c;
   line-height: 15px;
 }
-.services__button-next .services__button-prev {
-  font-size: 1.5rem;
-  color: black;
+.services__type {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__button-next span img {
+  width: 25px;
+  position: absolute;
+  top: 35%;
+  right: 25px;
+}
+.services__button-prev span img {
+  width: 25px;
+  position: absolute;
+  top: 35%;
+  left: 25px;
+}
+@media (min-width: 1280px) {
+  .services__button-next span img {
+    right: -15px;
+  }
+  .services__button-prev span img {
+    left: -15px;
+  }
 }
