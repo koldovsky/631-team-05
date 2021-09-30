@@ -53,13 +53,17 @@
     const slideContainer = document.querySelector(".services__type");
     let html = "";
     html = slides[currentSlide];
-    const nextSlide = currentSlide + 1 < slides.length ? currentSlide + 1 : 0;
-    html += slides[nextSlide];
-    const nextTwoSlide = nextSlide + 1 < slides.length ? nextSlide + 1 : 0;
-    html += slides[nextTwoSlide];
-    const nextThreeSlide =
-      nextTwoSlide + 1 < slides.length ? nextTwoSlide + 1 : 0;
-    html += slides[nextThreeSlide];
+    if (window.innerWidth > 767) {
+      const nextSlide = currentSlide + 1 < slides.length ? currentSlide + 1 : 0;
+      html += slides[nextSlide];
+      if (window.innerWidth > 991) {
+        const nextTwoSlide = nextSlide + 1 < slides.length ? nextSlide + 1 : 0;
+        html += slides[nextTwoSlide];
+        const nextThreeSlide =
+          nextTwoSlide + 1 < slides.length ? nextTwoSlide + 1 : 0;
+        html += slides[nextThreeSlide];
+      }
+    }
     slideContainer.innerHTML = html;
   }
 
@@ -76,6 +80,7 @@
 
   //   setInterval(nextSlide, 5000);
   showCurrentSlide();
+  window.addEventListener("resize", showCurrentSlide);
 
   const btnNext = document.querySelector(".services__button-next");
   btnNext.addEventListener("click", nextSlide);
