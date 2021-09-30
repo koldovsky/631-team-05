@@ -53,11 +53,19 @@ section div .item__text p {
   width: 25px;
   position: absolute;
   top: 35%;
-  right: -25px;
+  right: 25px;
 }
 .services__button-prev span img {
   width: 25px;
   position: absolute;
   top: 35%;
-  left: -25px;
+  left: 25px;
+}
+@media (min-width: 1280px) {
+  .services__button-next span img {
+    right: -15px;
+  }
+  .services__button-prev span img {
+    left: -15px;
+  }
 }

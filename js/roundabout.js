@@ -49,7 +49,7 @@
 
   let currentSlide = 0;
 
-  function showCurrentSlide() {
+  function showCurrentSlide(person) {
     const slideContainer = document.querySelector(".services__type");
     let html = "";
     html = slides[currentSlide];
