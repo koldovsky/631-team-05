@@ -1,4 +1,4 @@
-let times = (function countDownTime(id, seconds) {
+(function countDownTime(id, seconds) {
   let timeLeft = "";
   if (seconds > 0) {
     let seconds = parseInt(seconds % 60),
@@ -15,7 +15,7 @@ let times = (function countDownTime(id, seconds) {
         ":" +
         (seconds < 10 ? "0" + seconds : seconds);
       document.querySelector(".offer-special__time-left").innerHTML = timeLeft;
-      setTimeout('times("' + id + '", ' + (seconds - 1) + ")", 1000);
+      setTimeout('countDownTime("' + id + '", ' + (seconds - 1) + ")", 1000);
     }
   }
 })();

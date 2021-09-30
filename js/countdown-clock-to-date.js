@@ -1,6 +1,6 @@
 (function countDown() {
   const countDownDate = new Date("Oct 12, 2021 21:00:00").getTime();
-  const x = setInterval(function () {
+  const interval = setInterval(function () {
     let currentTime = new Date().getTime();
     let distance = countDownDate - currentTime;
     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -11,7 +11,7 @@
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     if (distance < 0) {
-      clearInterval(x);
+      clearInterval(interval);
       document.querySelector(".offer__date").innerHTML = "Time off";
     } else {
       document.querySelector(".offer__date").innerHTML =
