@@ -76,11 +76,12 @@
   function indicatorsClick() {
     for (let j = 0; j < indicators.length; j++) {
       indicators[j].addEventListener("click", function () {
-        currentSlide = slides[j];
-        show();
+        currentSlide = j;
+        showCurrentSlide();
       });
     }
   }
+  indicatorsClick();
 
   function nextSlide() {
     currentSlide++;
