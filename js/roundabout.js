@@ -46,10 +46,10 @@
                         </div>
                     </div>`,
   ];
-
+  let indicators = document.querySelectorAll(".services__indicator");
   let currentSlide = 0;
 
-  function showCurrentSlide(person) {
+  function showCurrentSlide() {
     const slideContainer = document.querySelector(".services__type");
     let html = "";
     html = slides[currentSlide];
@@ -59,13 +59,29 @@
       if (window.innerWidth > 991) {
         const nextTwoSlide = nextSlide + 1 < slides.length ? nextSlide + 1 : 0;
         html += slides[nextTwoSlide];
-        const nextThreeSlide =
-          nextTwoSlide + 1 < slides.length ? nextTwoSlide + 1 : 0;
-        html += slides[nextThreeSlide];
+        if (window.innerWidth > 1280) {
+          const nextThreeSlide =
+            nextTwoSlide + 1 < slides.length ? nextTwoSlide + 1 : 0;
+          html += slides[nextThreeSlide];
+        }
       }
     }
+    for (let i = 0; i < indicators.length; i++) {
+      indicators[i].classList.remove("active");
+    }
+    indicators[currentSlide].classList.add("active");
     slideContainer.innerHTML = html;
   }
+
+  function indicatorsClick() {
+    for (let j = 0; j < indicators.length; j++) {
+      indicators[j].addEventListener("click", function () {
+        currentSlide = j;
+        showCurrentSlide();
+      });
+    }
+  }
+  indicatorsClick();
 
   function nextSlide() {
     currentSlide++;
