@@ -36,24 +36,28 @@
                 <nav class="navigation">
                     <div class="navigation-logo">
                         <a href="index.html"><img width="150" src="img/logo.svg" alt="logo"></a>
-                        <a href=""><img class="navigation__burger-button" src="img/icons/burger.png"
-                                alt="burger logo"></a>
+                        <div class="navigation-burger"><span></span></div>
                     </div>
-                    <div class="navigation-pages">
-                        <a href="" class="navigations__headphones">Headphones</a>
-                        <a href="" class="navigations__speakers">Speakers</a>
-                        <a href="" class="navigations__news">News</a>
-                        <a href="" class="navigations__testimonials">Testimonials</a>
-                    </div>
-                    <div class="navigation-social">
-                        <a href="https://www.facebook.com/" target="blank"><img src="img/icons/facebook-icon.png"
-                                alt="facebook"></a>
-                        <a href="https://www.instagram.com/" target="blank"><img src="img/icons/insta-icon.png"
-                                alt="instagram"></a>
-                        <a href="https://twitter.com/" target="blank"><img src="img/icons/twitter-icon.png"
-                                alt="twitter"></a>
-                        <a href="https://www.youtube.com/" target="blank"><img src="img/icons/you-toube-icon.png"
-                                alt="youtube"></a>
+                    <div class="navigation-wrapper">
+                        <div class="navigation-pages">
+                            <a data-goto=".data-name_2" href="#"
+                                class="navigations__speakers navigation__link">Speakers</a>
+                            <a data-goto=".data-name_4" href="#" class="navigations__news navigation__link">News</a>
+                            <a data-goto=".data-name_3" href="#"
+                                class="navigations__testimonials navigation__link">Testimonials</a>
+                            <a data-goto=".data-name_1" href="#"
+                                class="navigations__headphones navigation__link">Headphones</a>
+                        </div>
+                        <div class="navigation-social">
+                            <a href="https://www.facebook.com/" target="blank"><img src="img/icons/facebook-icon.png"
+                                    alt="facebook"></a>
+                            <a href="https://www.instagram.com/" target="blank"><img src="img/icons/insta-icon.png"
+                                    alt="instagram"></a>
+                            <a href="https://twitter.com/" target="blank"><img src="img/icons/twitter-icon.png"
+                                    alt="twitter"></a>
+                            <a href="https://www.youtube.com/" target="blank"><img src="img/icons/you-toube-icon.png"
+                                    alt="youtube"></a>
+                        </div>
                     </div>
                 </nav>
                 <!--Main page-->
@@ -93,7 +97,7 @@
             <!--Tabs and services section-->
             <div id="container-top">
 
-                <div class="tabs">
+                <div class="tabs data-name_1">
                     <div class="tabs__head">
                         <a href="#" data-tab-name="1" class="tabs__name active">Featured</a>
                         <a href="#" data-tab-name="2" class="tabs__name">Sale</a>
@@ -402,7 +406,7 @@
         </div>
         <!--Fourth section (beginning)-->
         <section class="fourth-section">
-            <div class="Speakers">
+            <div class="Speakers data-name_2">
                 <header>
                     <h2>Speakers</h2>
                     <img class="logo" width="100" src="img/de2.svg" alt="logo">
@@ -573,9 +577,9 @@
 
         </section>
         <!--roundabout reviews-->
-        <section class="our-customers-say">
+        <section class="our-customers-say data-name_4">
             <div class="reviews__type"> </div>;
-                <div class="reviews__button-1"> Тиць</div>;
+            <div class="reviews__button-1"> Тиць</div>;
             <div class="reviews__button-2">Тиць</div>;
             <div class="title-our-customer-say">
                 <h2>Our Customers Say</h2>
@@ -640,7 +644,7 @@
         </section>
 
 
-        <article class="News">
+        <article class="News data-name_3">
             <section class="popular-article">
                 <div class="title-pop-art"></div>
                 <h2>Popular Articles</h2>
@@ -915,6 +919,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
+    <script src="js/burger-menu.js"></script>
     <script src="js/roundabout.js"></script>
     <script src="js/tabs.js"></script>
     <script src="js/countdown-clock-to-date.js"></script>
