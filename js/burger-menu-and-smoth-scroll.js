@@ -12,6 +12,7 @@
     navLinks.forEach((navLink) => {
       navLink.addEventListener("click", oneNavClick);
     });
+
     function oneNavClick(e) {
       const navLink = e.target;
       if (
@@ -19,7 +20,14 @@
         document.querySelector(navLink.dataset.goto)
       ) {
         const gotoBlock = document.querySelector(navLink.dataset.goto);
-        const gotoBlockLength = getBoundingClientRect().top + pageYOffset;
+        const gotoBlockLength =
+          gotoBlock.getBoundingClientRect().top + window.pageYOffset;
+
+        if (iconBurger.classList.contains("active")) {
+          document.body.classList.remove("lock");
+          iconBurger.classList.remove("active");
+          navigationsBody.classList.remove("active");
+        }
 
         window.scrollTo({
           top: gotoBlockLength,
@@ -29,5 +37,4 @@
       }
     }
   }
-  oneNavClick(e);
 })();
