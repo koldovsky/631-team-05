@@ -73,6 +73,9 @@ ul.services__indicators li {
   opacity: 0.3;
   border-radius: 50%;
 }
+ul.services__indicators li:hover {
+  opacity: 0.6;
+}
 ul.services__indicators li.active {
   opacity: 0.6;
 }
