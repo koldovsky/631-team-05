@@ -233,7 +233,6 @@ body {
 
 input {
   padding-left: 10px;
-
 }
 
 .buttom_subscribe {
@@ -276,7 +275,7 @@ input {
 
 a {
   text-decoration: none;
-  color: #fff;
+  /* color: #fff; */
 }
 
 .dash {

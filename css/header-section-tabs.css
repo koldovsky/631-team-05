@@ -27,6 +27,7 @@ div .tabs .tabs__head {
   text-decoration: none;
   padding: 0 15px;
 }
+
 #container-top > div.tabs > div.tabs__head > .tabs__name.active::after {
   content: " ";
   display: block;

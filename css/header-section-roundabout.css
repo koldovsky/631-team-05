@@ -50,31 +50,34 @@ section div .item__text p {
 .services__button-next span img {
   width: 25px;
   position: absolute;
-  top: 35%;
+  top: 30%;
   right: 25px;
 }
 .services__button-prev span img {
   width: 25px;
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 25px;
 }
 ul.services__indicators {
-  margin: auto;
+  margin: 35px auto 60px;
   display: flex;
   justify-content: space-between;
-  width: 400px;
+  width: 170px;
 }
 ul.services__indicators li {
   list-style: none;
   width: 10px;
   height: 10px;
   background: var(--button-black-color);
-  opacity: 0.5;
+  opacity: 0.3;
   border-radius: 50%;
 }
-ul.services__indicators li.active {
+ul.services__indicators li:hover {
   opacity: 1;
+}
+ul.services__indicators li.active {
+  opacity: 0.6;
 }
 
 @media (min-width: 1280px) {
