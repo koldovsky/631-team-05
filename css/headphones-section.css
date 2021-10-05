@@ -132,7 +132,7 @@
   }
   
   .countdown_headphones{
-   background-image: url(img/apple_headphones.jpg);
+   background-image: url(../img/apple_headphones.jpg);
    background-position:center;
    background-size:cover;
    height:100vh ;
