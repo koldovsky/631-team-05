@@ -144,7 +144,7 @@ function showProducts(products) {
             <div class="product__shopping">
                 <form action="#" method="get">
                     <input type="number" min="1" max="10" name="product__quantity" required>
-                    <button class="tabs__button tabs__button_big-blue " type="submit">Add to cart</button>
+                    <button class="tabs__button tabs__button_big-blue " type="submit" data-id="${product.id}" ">Add to cart</button>
                 </form>
             </div>
             <div class="product-description">
