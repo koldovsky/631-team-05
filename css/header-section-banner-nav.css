@@ -12,7 +12,7 @@
   margin: auto;
 }
 header .banner-bg {
-  min-height: 753px;
+  min-height: 75vh;
   background-size: cover;
   background-position: 43.44% 84.95%;
 }
@@ -242,6 +242,7 @@ section div nav .navigation-logo img {
   }
   section div nav .navigation-pages a:hover {
     color: var(--button-black-color);
+    cursor: pointer;
   }
   section div nav .navigation-pages a:after {
     content: " ";
