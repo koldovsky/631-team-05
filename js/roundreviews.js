@@ -5,10 +5,11 @@ function () {
         '<div class="person3"><img src="img/smiling-man.png" alt="smiling-man" id="person3"></div>',
     ];
 
+
     let firstSlide = 0;
 
     function showFirstSlide() {
-        const reviewsContainer = document.querySelector(".reviews-type");
+        const reviewsContainer = document.querySelector(".newproducts_container");
         let html = '';
         html = reviewSlides[firstSlide];
         const nextSlide = firstSlide + 1 < reviewSlides.length ? firstSlide + 1 : 0;
@@ -32,13 +33,13 @@ function () {
     }
     
 
-    setInterval(nextSlide, 5000);
     showFirstSlide();
+    window.addEventListener("resize", showFirstSlide);
 
     const btnNext = document.getElementById("slide-next");
     btnNext.addEventListener("click", nextSlide);
 
     const btnPrev = document.getElementById("slide-prev");
     btnPrev.addEventListener("click", prevSlide);
-
+})();
 
