@@ -24,7 +24,10 @@
         <p>"I often listen to music, and for me, first of all, it is important that the headphones sit
             comfortably on my head. In the Basside store, Ive found exactly what i needed at a very nice price.
             The customer servise also works great, and these guys helped me with the choice."</p>
-    </div>`,
+    </div> 
+    <div class="date2">
+    <h4>March 28,2021</h4>
+</div>`,
         `<div class="person3">
         <img src="img/smiling-man.png" alt="smiling-man" id="person3">
     </div>
@@ -35,7 +38,10 @@
         <p>"I often listen to music, and for me, first of all, it is important that the headphones sit
             comfortably on my head. In the Basside store, Ive found exactly what i needed at a very nice price.
             The customer servise also works great, and these guys helped me with the choice."</p>
-    </div>`,
+    </div> 
+    <div class="date3">
+    <h4>May 29,2021</h4>
+</div>`,
     ];
 
 
