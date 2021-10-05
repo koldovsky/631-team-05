@@ -1,4 +1,3 @@
-(function() {})
 async function getProducts(productsUrl) {
   const requestProducts = await fetch(productsUrl);
   const products = await requestProducts.json();
@@ -48,4 +47,3 @@ async function loadAndRenderProduct() {
   showProducts(products);
 }
 loadAndRenderProduct();
-}) ();
