@@ -1,8 +1,41 @@
 (function () {
     const reviews = [
-        '<div><img src="img/man-with-headphones.png" id="person1" alt=""></div>',
-        '<div><img src="img/girl-with-headphones.png" id="person2" alt=""></div>',
-        '<div><img src="img/smiling-man.png" id="person3" alt=""></div>',
+        `<div class="person1">
+        <img src="img/man-with-headphones.png" id="person1" alt="man-with-headphones"">
+    </div>
+    <div class="name1">
+        <h3>Dean Williams</h3>
+    </div>
+    <div class="text1">
+        <p>"I often listen to music, and for me, first of all, it is important that the headphones sit
+            comfortably on my head. In the Basside store, Ive found exactly what i needed at a very nice price.
+            The customer servise also works great, and these guys helped me with the choice."</p>
+    </div>
+    <div class="date1">
+        <h4>December 15,2020</h4>
+    </div>`,
+        `<div class="person2">
+        <img src="img/girl-with-headphones.png" alt="girl-with-headphones" id="person2">
+    </div>
+    <div class="name2">
+        <h3>Jessica Gordons</h3>
+    </div>
+    <div class="text2">
+        <p>"I often listen to music, and for me, first of all, it is important that the headphones sit
+            comfortably on my head. In the Basside store, Ive found exactly what i needed at a very nice price.
+            The customer servise also works great, and these guys helped me with the choice."</p>
+    </div>`,
+        `<div class="person3">
+        <img src="img/smiling-man.png" alt="smiling-man" id="person3">
+    </div>
+    <div class="name3">
+        <h3>Eric Smith</h3>
+    </div>
+    <div class="text1">
+        <p>"I often listen to music, and for me, first of all, it is important that the headphones sit
+            comfortably on my head. In the Basside store, Ive found exactly what i needed at a very nice price.
+            The customer servise also works great, and these guys helped me with the choice."</p>
+    </div>`,
     ];
 
 
@@ -10,13 +43,8 @@
 
     function showFirstSlide() {
         const reviewContainer = document.querySelector(".newproducts_container");
-        let html = '';
-        html = reviews[firstSlide];
-        const nextSlide = firstSlide + 1 < reviews.length ? firstSlide + 1 : 0;
-        html += reviews[nextSlide];
-        const next2Slide = nextSlide + 1 < reviews.length ? nextSlide + 1 : 0;
-        html += reviews[next2Slide];
-        reviewContainer.innerHTML = html;
+        
+        reviewContainer.innerHTML = reviews[firstSlide];
        
     }
 
