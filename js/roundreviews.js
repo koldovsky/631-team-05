@@ -1,34 +1,34 @@
-function () {
-    const reviewSlides = [
-        '<div class="person1"><img src="img/man-with-headphones.png" id="person1" alt=""></div>',
-        '<div class="person2"><img src="img/girl-with-headphones.png" alt="girl-with-headphones" id="person2"></div>',
-        '<div class="person3"><img src="img/smiling-man.png" alt="smiling-man" id="person3"></div>',
+(function () {
+    const reviews = [
+        '<div><img src="img/man-with-headphones.png" id="person1" alt=""></div>',
+        '<div><img src="img/girl-with-headphones.png" id="person2" alt=""></div>',
+        '<div><img src="img/smiling-man.png" id="person3" alt=""></div>',
     ];
 
 
     let firstSlide = 0;
 
     function showFirstSlide() {
-        const reviewsContainer = document.querySelector(".newproducts_container");
+        const reviewContainer = document.querySelector(".newproducts_container");
         let html = '';
-        html = reviewSlides[firstSlide];
-        const nextSlide = firstSlide + 1 < reviewSlides.length ? firstSlide + 1 : 0;
-        html += reviewSlides[nextSlide];
-        const next2Slide = nextSlide + 1 < reviewSlides.length ? nextSlide + 1 : 0;
-        html += reviewSlides[next2Slide];
-        slideContainer.innerHTML = html;
+        html = reviews[firstSlide];
+        const nextSlide = firstSlide + 1 < reviews.length ? firstSlide + 1 : 0;
+        html += reviews[nextSlide];
+        const next2Slide = nextSlide + 1 < reviews.length ? nextSlide + 1 : 0;
+        html += reviews[next2Slide];
+        reviewContainer.innerHTML = html;
        
     }
 
     function nextSlide() {
         firstSlide++;
-        if (firstSlide >= reviewSlides.length) firstSlide = 0;
+        if (firstSlide >= reviews.length) firstSlide = 0;
         showFirstSlide();
     }
 
     function prevSlide() {
         firstSlide--;
-        if (firstSlide < 0) firstSlide = reviewSlides.length - 1;
+        if (firstSlide < 0) firstSlide = reviews.length - 1;
         showFirstSlide();
     }
     
