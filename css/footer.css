@@ -272,10 +272,12 @@ input {
 .social_menu:hover a {
   text-decoration: underline;
 }
-
-a {
+.buttom {
+  color:fff;
+}
+div ul.social_menu a {
   text-decoration: none;
-  /* color: #fff; */
+   color: #fff; 
 }
 
 .dash {
