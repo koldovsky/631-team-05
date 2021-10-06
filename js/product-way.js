@@ -5,7 +5,7 @@ class ProductsService {
   }
   async getProducts() {
     if (!this.products) {
-      this.products = await (await fetch("products.json")).json();
+      this.products = await (await fetch("audio-products-list.json")).json();
     }
     return this.products;
   }

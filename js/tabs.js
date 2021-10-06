@@ -22,14 +22,31 @@ const tabs = (function () {
   }
 })();
 
-(function () {
-  async function getProducts(productsUrl) {
-    const requestProducts = await fetch(productsUrl);
-    const products = await requestProducts.json();
-    return products;
+// (function () {
+//   async function getProducts(productsUrl) {
+//     const requestProducts = await fetch(productsUrl);
+//     const products = await requestProducts.json();
+//     return products;
+//   }
+class ProductList {
+  constructor(cart) {
+    this.cart = cart;
+    this.productService = new ProductsService();
+    this.productService
+      .getProducts()
+      .then(() => this.showProductsTab())
+      .then(() => this.addEventListeners());
+    this.addEventListeners();
+  }
+  async getProducts() {
+    if (!this.products) {
+      this.products = await (await fetch("audio-products-list.json")).json();
+    }
+    return this.products;
   }
 
-  function showProductsTab(products) {
+  async showProductsTab() {
+    const products = await this.productService.getProducts();
     for (let i = 0; i < products.length; i++) {
       if (products[i].category === "featured") {
         let productContainer = document.querySelector("#featured");
@@ -70,13 +87,25 @@ const tabs = (function () {
     }
   }
 
-  async function loadAndRenderProduct() {
-    const products = await getProducts("audio-products-list.json");
-    showProductsTab(products);
-  }
-  loadAndRenderProduct();
+  // async loadAndRenderProduct() {
+  //   const products = await getProducts("audio-products-list.json");
+  //   showProductsTab(products);
+  // }
+  // loadAndRenderProduct();
 
-  document
-    .querySelectorAll(".tabs__image")
-    .addEventListener("click", showProducts);
-})();
+  addEventListeners() {
+    document
+      .querySelectorAll(".tabs__button")
+      .forEach((button) =>
+        button.addEventListener("click", (event) =>
+          this.handleProductByClick(event)
+        )
+      );
+  }
+
+  handleProductByClick(event) {
+    const button = event.target;
+    const id = button.dataset.id;
+    this.cart.addProduct(id);
+  }
+}

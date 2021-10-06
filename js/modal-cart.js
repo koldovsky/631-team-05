@@ -72,13 +72,13 @@ class Cart {
       const product = await this.productService.getProductById(id);
       total += product.price * this.cart[id];
       cartDomSting += ` <article class="modal-cart-product" data-id="${id}">
-                        <img src="img/featured/gbl-gt.png" alt="">
-                        <p class="modal-cart-product__name">GBL-GT</p>
+                        <img src="${product.img}" alt="">
+                        <p class="modal-cart-product__name">${product.name}</p>
                         <form action="#" method="GET">
                             <input class="modal-cart-product__quantity" type="number" min="1" max="100"
                                 value="quantity">
                         </form>
-                        <p class="modal-cart-product__price">$120</p>
+                        <p class="modal-cart-product__price">$${product.price}</p>
                         <button class="modal-cart-product__remove">x</button>
                     </article>`;
     }
