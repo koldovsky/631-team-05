@@ -126,6 +126,6 @@ body.lock {
   background-color: var(--input-color);
   border-radius: 0.3rem;
 }
-.modal-cart__button {
+.modal-cart__order {
   margin: 15px auto;
 }

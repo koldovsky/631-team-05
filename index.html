@@ -101,6 +101,12 @@
             </div> -->
 
             <!--Tabs and services section-->
+            <div>
+                <a class="nav-link openCartLink" href="#modal-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    Cart<span id="cart-badge" class="badge bg-dark"></span>
+                </a>
+            </div>
             <div id="container-top">
 
                 <div class="tabs navigation-way_4">
@@ -919,6 +925,7 @@
                     <p class="modal-cart__title">Shopping cart</p>
                     <a href="#" class="modal-cart__close-button close-cart"><span></span></a>
                 </header>
+                <div class="modal-cart__products-list">Products</div>
                 <div class="modal-cart__product-container">
                     <article class="modal-cart-product">
                         <img src="img/featured/gbl-gt.png" alt="">
@@ -942,7 +949,7 @@
                     <label class="modal-cart__label" for="comments">Comments</label>
                     <textarea class="modal-cart__input" name="comments" id="comments" placeholder="Your comments"
                         cols="30" rows="10"></textarea>
-                    <button class="modal-cart__button" type="submit">Order</button>
+                    <button class="modal-cart__order" type="submit">Order</button>
                 </form>
             </div>
         </article>

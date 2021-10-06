@@ -1,5 +1,5 @@
 /* Buttons for Tabs */
-.modal-cart__button,
+.modal-cart__order,
 div .tabs__container .tabs__button {
   background-color: var(--button-black-color);
   font-size: 0.7rem;
@@ -9,14 +9,14 @@ div .tabs__container .tabs__button {
   padding: 15px 25px;
   transition: 0.5s;
 }
-.modal-cart__button:hover,
+.modal-cart__order:hover,
 div .tabs__container .tabs__button:hover {
   background-color: var(--button-blue-color);
   box-shadow: 2px 7px 3px var(--button-black-color);
   transition-duration: 0.7s, 0.3s;
   transition-delay: 0.1s 0;
 }
-.modal-cart__button:active,
+.modal-cart__order:active,
 div .tabs__container .tabs__button:active:hover {
   background-color: var(--button-blue-color);
   box-shadow: 2px 3px 2px var(--button-black-color);
