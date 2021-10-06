@@ -46,7 +46,7 @@ const tabs = (function () {
       if (products[i].category === "sale") {
         let productContainer = document.querySelector("#sale");
         productContainer.innerHTML += `<article class="tabs__container">
-                                <a class="tabs__image sm" href="#"><img data-id="${products[i].id}" src="${products[i].img}"
+                                <a class="tabs__image sm" data-id="${products[i].id} href="#"><img data-id="${products[i].id}" src="${products[i].img}"
                                         alt="${products[i].name}"></a>
                                 <a class="tabs__product-name " href="">${products[i].name}</a>
                                 <p>$${products[i].price}</p>
@@ -75,4 +75,8 @@ const tabs = (function () {
     showProductsTab(products);
   }
   loadAndRenderProduct();
+
+  document
+    .querySelectorAll(".tabs__image")
+    .addEventListener("click", showProducts);
 })();
