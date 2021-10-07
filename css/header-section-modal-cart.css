@@ -1,6 +1,22 @@
 body.lock {
   overflow: hidden;
 }
+.cart-link {
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  z-index: 10;
+  visibility: visible;
+  opacity: 1;
+}
+.cart-link.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+.cart-link img {
+  max-width: 100px;
+}
+
 .modal-cart {
   position: fixed;
   top: 0;
