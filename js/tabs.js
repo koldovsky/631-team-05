@@ -135,6 +135,11 @@ const tabs = (function () {
 //     }
 //   }
 
+//   async loadAndRenderProduct() {
+//   const products = await getProducts("audio-products-list.json");
+//   showProductsTab(products);
+// }
+
 //   addEventListeners() {
 //     document
 //       .querySelectorAll(".tabs__button")
