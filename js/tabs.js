@@ -33,9 +33,9 @@ const tabs = (function () {
       if (products[i].category === "featured") {
         let productContainer = document.querySelector("#featured");
         productContainer.innerHTML += `<article class="tabs__container">
-                                <a class="tabs__image sm" href="#"><img data-id="${products[i].id}" src="${products[i].img}"
+                                <a class="tabs__image tabs__click sm" href="product-card.html"><img data-id="${products[i].id}" src="${products[i].img}"
                                         alt="${products[i].name}"></a>
-                                <a class="tabs__product-name " href="">${products[i].name}</a>
+                                <a class="tabs__product-name tabs__click" href="product-card.html" data-id="${products[i].id}">${products[i].name}</a>
                                 <p>$${products[i].price}</p>
                                 <form action="#" method="get">
                                     <button class="tabs__button" type="submit" data-id="${products[i].id}">Add to cart</button>
@@ -45,9 +45,9 @@ const tabs = (function () {
       if (products[i].category === "sale") {
         let productContainer = document.querySelector("#sale");
         productContainer.innerHTML += `<article class="tabs__container">
-                                <a class="tabs__image sm" data-id="${products[i].id} href="#"><img data-id="${products[i].id}" src="${products[i].img}"
+                                <a class="tabs__image tabs__click sm" href="product-card.html"><img data-id="${products[i].id}" src="${products[i].img}"
                                         alt="${products[i].name}"></a>
-                                <a class="tabs__product-name " href="">${products[i].name}</a>
+                                <a class="tabs__product-name tabs__click" href="product-card.html" data-id="${products[i].id}">${products[i].name}</a>
                                 <p>$${products[i].price}</p>
                                 <form action="#" method="get">
                                     <button class="tabs__button" type="submit" data-id="${products[i].id}">Add to cart</button>
@@ -57,15 +57,25 @@ const tabs = (function () {
       if (products[i].category === "new") {
         let productContainer = document.querySelector("#new");
         productContainer.innerHTML += `<article class="tabs__container">
-                                <a class="tabs__image sm" href="#"><img data-id="${products[i].id}" src="${products[i].img}"
+                                <a class="tabs__image tabs__click sm" href="product-card.html"><img data-id="${products[i].id}" src="${products[i].img}"
                                         alt="${products[i].name}"></a>
-                                <a class="tabs__product-name " href="">${products[i].name}</a>
+                                <a class="tabs__product-name tabs__click" href="product-card.html" data-id="${products[i].id}">${products[i].name}</a>
                                 <p>$${products[i].price}</p>
                                 <form action="#" method="get">
                                     <button class="tabs__button" type="submit" data-id="${products[i].id}">Add to cart</button>
                                 </form>
                             </article> `;
       }
+    }
+    const detailsBtn = document.querySelectorAll(".tabs__click");
+    for (const btn of detailsBtn) {
+      btn.addEventListener("click", showProductDetails);
+    }
+
+    function showProductDetails(ev) {
+      const tabImage = ev.target;
+      const productId = tabImage.dataset.id;
+      localStorage["product-id"] = productId;
     }
   }
 

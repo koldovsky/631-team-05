@@ -59,6 +59,10 @@ section div .item__text p {
   top: 30%;
   left: 25px;
 }
+.services__button-prev span:hover,
+.services__button-next span:hover {
+  cursor: pointer;
+}
 ul.services__indicators {
   margin: 35px auto 60px;
   display: flex;
@@ -75,6 +79,7 @@ ul.services__indicators li {
 }
 ul.services__indicators li:hover {
   opacity: 1;
+  cursor: pointer;
 }
 ul.services__indicators li.active {
   opacity: 0.6;

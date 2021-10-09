@@ -5,9 +5,11 @@ async function getProducts(productsUrl) {
 }
 
 function showProducts(products) {
+  const dataId = localStorage["product-id"];
   const productContainer = document.querySelector(".product-page");
   for (const product of products) {
-    productContainer.innerHTML += ` <div class="product-picture">
+    if (product.id === dataId) {
+      productContainer.innerHTML = ` <div class="product-picture">
             <img class="img-main" src="${product.img}" alt="${product.name}">
         </div>
         <div class="product-text">
@@ -39,6 +41,7 @@ function showProducts(products) {
                 </div>
             </div>
         </div>`;
+    }
   }
 }
 
