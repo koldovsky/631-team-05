@@ -36,7 +36,7 @@ display: grid;
     grid-template-columns: 1fr 10fr 1fr;
     align-items: center;
     justify-content: space-around;
-    margin: auto;
+    margin-bottom: 10px;
 }
 .products{
     display: grid;
@@ -60,6 +60,16 @@ display: grid;
   font-size: 16px;
   white-space: nowrap;
   margin-left: 8px;
+}
+.speakers_button{
+  background-color: black;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    transition: 0.5s;
+    margin: 0px 0px 20px 15px;
 }
 .speakers-slide-prev,
 .speakers-slide-next {
@@ -87,6 +97,15 @@ display: grid;
     border-radius: 50%;
     border: none;
     margin-left: 20px;
+}
+.play-video{
+  font-size: 12px;
+  font-weight: 700;
+  text-align: left;
+  color: white;
+  font-family: PT Sans,sans-serif;
+  margin-left: 90px;
+  margin-top: -40px;
 }
 .mega-sale{
     display: grid;
