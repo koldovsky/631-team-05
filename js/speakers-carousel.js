@@ -12,7 +12,7 @@
         <div class="speakers-price">
         <span class="speakers-price">$140,00</span>
         </div>
-        <div class="product_button">
+        <div class="speakers_product_button">
         <button type="button">Add to cart
         </button>
         </div>
@@ -30,7 +30,7 @@
         <div class="speakers-price">
         <span class="speakers-price">$180,00</span>
         </div>
-        <div class="product_button">
+        <div class="speakers_product_button">
         <button type="button">Add to cart
         </button>
         </div>
@@ -48,7 +48,7 @@
         <div class="speakers-price">
         <span class="speakers-price">$110,00</span>
         </div>
-        <div class="product_button">
+        <div class="speakers_product_button">
         <button type="button">Add to cart
         </button>
         </div>
@@ -66,7 +66,7 @@
         <div class="speakers-price">
         <span class="speakers-price">$120,00</span>
         </div>
-        <div class="product_button">
+        <div class="speakers_product_button">
         <button type="button">Add to cart
         </button>
         </div>
@@ -84,7 +84,7 @@
         <div class="speakers-price">
         <span class="speakers-price">$110,00</span>
         </div>
-        <div class="product_button">
+        <div class="speakers_product_button">
         <button type="button">Add to cart
         </button>
         </div>
@@ -102,7 +102,7 @@
         <div class="speakers-price">
         <span class="speakers-price">$98,00</span>
         </div>
-        <div class="product_button">
+        <div class="speakers_product_button">
         <button type="button">Add to cart
         </button>
         </div>

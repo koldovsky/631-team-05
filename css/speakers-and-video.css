@@ -13,7 +13,8 @@
 }
 .video-header{
     color:white;
-    font-size: 60px;
+    font-size: 70px;
+    font-weight: 700;
     font-family: Heebo, sans-serif;
     text-align: left;
     
@@ -80,6 +81,7 @@ display: grid;
 .play_button{
     width: 60px;
     height: 60px;
+    background-color: white;
     border-radius: 50%;
 }
 .mega-sale{
