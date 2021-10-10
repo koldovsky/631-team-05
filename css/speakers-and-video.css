@@ -158,10 +158,10 @@ position: absolute;
     padding-top: 30px;
   }
   
-  .countdown_speakers_day,
-  .countdown_speakers_hour,
-  .countdown_speakers_minute,
-  .countdown_speakers_second {
+  .countdown-speakers-day,
+  .countdown-speakers-hour,
+  .countdown-speakers-minute,
+  .countdown-speakers-second {
     font-weight: bold;
     font-size: 40px;
   }
