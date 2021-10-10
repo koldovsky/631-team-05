@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700;&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap");
+
+
 .video-header{
     color:white;
     font-size: 60px;
@@ -17,9 +19,23 @@
     color: white;
     font-family: PT Sans,sans-serif;
 }
-.Speakers .products{
-    display: flex;
+.carousel{
+display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    align-items: center;
+    justify-content: space-around;
 }
+.products{
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 5px;
+        justify-content: space-between;
+   
+}
+
+
+
+
 .video{
     background-image: url(../img/girl3.png);
     background-size: cover;
