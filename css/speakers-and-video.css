@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700;&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap");
+
+.speakers-title{
+  text-align: center;
+  color: rgb(47,47,47);
+  font-size: 60px;
+  font-weight: 900;
+}
+.speakers p{
+  text-align: center;
+}
 .video-header{
     color:white;
     font-size: 60px;
@@ -7,7 +17,7 @@
     text-align: left;
     
 }
-.Speakers img.logo{
+.speakers img.logo{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -17,17 +27,144 @@
     color: white;
     font-family: PT Sans,sans-serif;
 }
-.Speakers .products{
-    display: flex;
+.carousel{
+display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+.products{
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 5px;
+        justify-content: space-between;
+        margin: auto;  
+}
+.product_card{
+  border: 2px solid #f2f2f2;
+}
+.text_link{
+  text-decoration: none;
+  color: #2a2a2a;
+  font-size: 17px;
+  font-weight: 600;
+  margin-left: 15px;
+}
+.speakers-price{
+  font-weight: 600;
+  font-size: 16px;
+  white-space: nowrap;
+  margin-left: 8px;
+}
+.speakers-slide-prev,
+.speakers-slide-next {
+  border-radius: 50%;
+  background-color: #4a4a4a;
+  margin: auto;
+  padding: 1px 1px;
+}
+.speakers-slide-next:hover,
+.speakers-slide-prev:hover {
+  border-radius: 50%;
+  background-color: #2a2a2a;
+  margin: auto;
 }
 .video{
     background-image: url(../img/girl3.png);
     background-size: cover;
     background-position: center;
-    height: 703px;  
+    height: 100vh;  
 }
 .play_button{
     width: 60px;
     height: 60px;
     border-radius: 50%;
 }
+.mega-sale{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.countdown-speakers{
+    background-image: url(../img/Bose_speaker.webp);
+    background-size: cover;
+    height: 75vh;
+    position: relative;
+}
+.countdown-speakers-title{
+position: absolute;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-family:  Heebo, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color:rgb(235,81,18);
+}
+.countdown-speakers-product  {
+    padding-top: 70px;
+    padding-left: 10px;
+    font-family: Heebo, sans-serif;
+    font-weight: 1000;
+    font-size: 50px;
+    color: black;
+    position: relative;
+}
+.countdown-speakers-product-model{
+    padding-left: 10px;
+    font-family: Heebo, sans-serif;
+    font-weight: 1000;
+    font-size: 50px;
+    color: black;
+    position: relative;
+}
+.Bose-speaker-price-old {
+    text-decoration: line-through;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 0px;
+    font-family: Heebo, sans-serif;
+    font-weight: 1000;
+    font-size: 50px;
+    color: rgba(83,83,83,0.45);
+    position: relative;
+  }
+  
+  .Bose-speaker-price-new {
+    margin-top: -150px;
+    padding-left: 180px;
+    font-family: Heebo, sans-serif;
+    font-weight: 1000;
+    font-size: 100px;
+    color: rgb(235,81,18);
+    position: relative;
+  }
+  
+  .countdown_speakers_sale {
+    display: flex;
+    margin: 30px;
+    margin-top: -50px;
+    justify-content: center;
+  }
+  
+  .countdown_sale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-family: sans-serif;
+    padding-top: 30px;
+  }
+  
+  .day,
+  .hour,
+  .minute,
+  .second {
+    font-weight: bold;
+    font-size: 40px;
+  }
+  .redaout {
+    color: rgba(83,83,83,0.45);
+    font-size: 30px;
+  }
