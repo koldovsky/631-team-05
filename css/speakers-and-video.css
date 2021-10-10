@@ -108,8 +108,89 @@ display: grid;
   margin-top: -40px;
 }
 .mega-sale{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.countdown-airpulse{
+  background-image: url(../img/AirPulseR255.webp);
+    background-size: cover;
+    height: 75vh;
+    position: relative;
+}
+.countdown-airpulse-title{
+  position: absolute;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family:  Heebo, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color:#2877b6;
+  }
+  .countdown-airpulse-product  {
+    padding-top: 70px;
+    padding-left: 10px;
+    font-family: Heebo, sans-serif;
+    font-weight: 1000;
+    font-size: 50px;
+    color: black;
+    position: relative;
+}
+.countdown-airpulse-product-model{
+  padding-left: 10px;
+  font-family: Heebo, sans-serif;
+  font-weight: 1000;
+  font-size: 50px;
+  color: black;
+  position: relative;
+}
+.airpulse-price-old {
+  text-decoration: line-through;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 0px;
+  font-family: Heebo, sans-serif;
+  font-weight: 1000;
+  font-size: 50px;
+  color: rgba(83,83,83,0.45);
+  position: relative;
+}
+.airpulse-price-new {
+  margin-top: -150px;
+  padding-left: 180px;
+  font-family: Heebo, sans-serif;
+  font-weight: 1000;
+  font-size: 100px;
+  color: #2877b6;
+  position: relative;
+}
+.countdown_airpulse_sale {
+  display: flex;
+  margin: 30px;
+  margin-top: -50px;
+  justify-content: center;
+}
+.countdown_airpulse_sale_timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  font-family: sans-serif;
+  padding-top: 30px;
+}
+  .countdown-airpulse-day,
+  .countdown-airpulse-hour,
+  .countdown-airpulse-minute,
+  .countdown-airpulse-second {
+    font-weight: bold;
+    font-size: 40px;
+}
+.countdown_airpulse_date {
+  color: rgba(83,83,83,0.45);
+  font-size: 30px;
 }
 .countdown-speakers{
     background-image: url(../img/Bose_speaker.webp);
@@ -173,7 +254,7 @@ position: absolute;
     justify-content: center;
   }
   
-  .countdown_sale {
+  .countdown_speaker_sale_timer {
     display: flex;
     flex-direction: column;
     align-items: center;
