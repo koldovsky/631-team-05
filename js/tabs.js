@@ -155,9 +155,9 @@ const tabs = (function () {
 //     this.addEventListeners();
 //   }
 //   async getProducts() {
-//     if (!this.products) {
-//       this.products = await (await fetch("audio-products-list.json")).json();
-//     }
+//     this.requestProducts = await fetch(productsUrl);
+//     this.products = await requestProducts.json();
+
 //     return this.products;
 //   }
 
@@ -204,9 +204,9 @@ const tabs = (function () {
 //   }
 
 //   async loadAndRenderProduct() {
-//   const products = await getProducts("audio-products-list.json");
-//   showProductsTab(products);
-// }
+//     const products = await getProducts("audio-products-list.json");
+//     showProductsTab(products);
+//   }
 
 //   addEventListeners() {
 //     document
