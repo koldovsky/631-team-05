@@ -17,6 +17,7 @@
     font-weight: 700;
     font-family: Heebo, sans-serif;
     text-align: left;
+    margin-left: 20px;
     
 }
 .speakers img.logo{
@@ -28,6 +29,7 @@
     text-align: left;
     color: white;
     font-family: PT Sans,sans-serif;
+    margin-left: 20px;
 }
 .carousel{
 display: grid;
@@ -83,6 +85,8 @@ display: grid;
     height: 60px;
     background-color: white;
     border-radius: 50%;
+    border: none;
+    margin-left: 20px;
 }
 .mega-sale{
     display: grid;
