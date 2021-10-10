@@ -29,40 +29,70 @@ const tabs = (function () {
     return products;
   }
   function showProductsTab(products) {
+    let productContainerFeatured = document.querySelector("#featured");
+    productContainerFeatured.innerHTML = "";
+    let productContainerSale = document.querySelector("#sale");
+    productContainerSale.innerHTML = "";
+    let productContainerNew = document.querySelector("#new");
+    productContainerNew.innerHTML = "";
     for (let i = 0; i < products.length; i++) {
       if (products[i].category === "featured") {
         let productContainer = document.querySelector("#featured");
         productContainer.innerHTML += `<article class="tabs__container">
-                                <a class="tabs__image tabs__click sm" href="product-card.html"><img data-id="${products[i].id}" src="${products[i].img}"
+                                <a class="tabs__image tabs__click sm" href="product-card.html"><img data-id="${
+                                  products[i].id
+                                }" src="${products[i].img}"
                                         alt="${products[i].name}"></a>
-                                <a class="tabs__product-name tabs__click" href="product-card.html" data-id="${products[i].id}">${products[i].name}</a>
-                                <p>$${products[i].price}</p>
+                                <a class="tabs__product-name tabs__click" href="product-card.html" data-id="${
+                                  products[i].id
+                                }">${products[i].name}</a>
+                                <p>${products[i].currency || "USD"} ${
+          products[i].convertedPrice || products[i].price.toFixed(2)
+        }</p>
                                 <form action="#" method="get">
-                                    <button class="tabs__button" type="submit" data-id="${products[i].id}">Add to cart</button>
+                                    <button class="tabs__button" type="submit" data-id="${
+                                      products[i].id
+                                    }">Add to cart</button>
                                 </form>
                             </article> `;
       }
       if (products[i].category === "sale") {
-        let productContainer = document.querySelector("#sale");
-        productContainer.innerHTML += `<article class="tabs__container">
-                                <a class="tabs__image tabs__click sm" href="product-card.html"><img data-id="${products[i].id}" src="${products[i].img}"
+        let productContainerSale = document.querySelector("#sale");
+        productContainerSale.innerHTML += `<article class="tabs__container">
+                                <a class="tabs__image tabs__click sm" href="product-card.html"><img data-id="${
+                                  products[i].id
+                                }" src="${products[i].img}"
                                         alt="${products[i].name}"></a>
-                                <a class="tabs__product-name tabs__click" href="product-card.html" data-id="${products[i].id}">${products[i].name}</a>
-                                <p>$${products[i].price}</p>
+                                <a class="tabs__product-name tabs__click" href="product-card.html" data-id="${
+                                  products[i].id
+                                }">${products[i].name}</a>
+                                <p>${products[i].currency || "USD"} ${
+          products[i].convertedPrice || products[i].price.toFixed(2)
+        }</p>
                                 <form action="#" method="get">
-                                    <button class="tabs__button" type="submit" data-id="${products[i].id}">Add to cart</button>
+                                    <button class="tabs__button" type="submit" data-id="${
+                                      products[i].id
+                                    }">Add to cart</button>
                                 </form>
                             </article> `;
       }
       if (products[i].category === "new") {
-        let productContainer = document.querySelector("#new");
-        productContainer.innerHTML += `<article class="tabs__container">
-                                <a class="tabs__image tabs__click sm" href="product-card.html"><img data-id="${products[i].id}" src="${products[i].img}"
+        let productContainerNew = document.querySelector("#new");
+        productContainerNew.innerHTML += `<article class="tabs__container">
+                                <a class="tabs__image tabs__click sm" href="product-card.html"><img data-id="${
+                                  products[i].id
+                                }" src="${products[i].img}"
                                         alt="${products[i].name}"></a>
-                                <a class="tabs__product-name tabs__click" href="product-card.html" data-id="${products[i].id}">${products[i].name}</a>
-                                <p>$${products[i].price}</p>
+                                <a class="tabs__product-name tabs__click" href="product-card.html" data-id="${
+                                  products[i].id
+                                }">${products[i].name}</a>
+                                <p>${products[i].currency || "USD"} ${
+          products[i].convertedPrice || products[i].price.toFixed(2)
+        }</p>
                                 <form action="#" method="get">
-                                    <button class="tabs__button" type="submit" data-id="${products[i].id}">Add to cart</button>
+                                    <button class="tabs__button" type="submit" data-id="${
+                                      products[i].id
+                                    }">Add to cart</button>
                                 </form>
                             </article> `;
       }
@@ -84,6 +114,34 @@ const tabs = (function () {
     showProductsTab(products);
   }
   loadAndRenderProduct();
+
+  async function convertCurrency(ev) {
+    const chooseCurrency = ev.target;
+    const convertTo = chooseCurrency.dataset.value;
+    const currencies = await getProducts(
+      "https://api.exchangerate-api.com/v4/latest/USD"
+    );
+    const rate = currencies.rates[convertTo];
+    const products = await getProducts("audio-products-list.json");
+    for (const product of products) {
+      product.convertedPrice = (product.price * rate).toFixed(2);
+      product.currency = convertTo;
+    }
+    for (let j = 0; j < availableCurrencies.length; j++) {
+      if (availableCurrencies[j].dataset.value === convertTo) {
+        availableCurrencies[j].classList.add("active");
+      } else {
+        availableCurrencies[j].classList.remove("active");
+      }
+    }
+
+    showProductsTab(products);
+  }
+
+  const availableCurrencies = document.querySelectorAll(".convert");
+  for (const availableCurrency of availableCurrencies) {
+    availableCurrency.addEventListener("click", convertCurrency);
+  }
 })();
 
 // class ProductList {
