@@ -29,8 +29,12 @@ const tabs = (function () {
     return products;
   }
   function showProductsTab(products) {
-    let productContainer = document.querySelector(".tabs__content");
-    productContainer.innerHTML = "";
+    let productContainerFeatured = document.querySelector("#featured");
+    productContainerFeatured.innerHTML = "";
+    let productContainerSale = document.querySelector("#sale");
+    productContainerSale.innerHTML = "";
+    let productContainerNew = document.querySelector("#new");
+    productContainerNew.innerHTML = "";
     for (let i = 0; i < products.length; i++) {
       if (products[i].category === "featured") {
         let productContainer = document.querySelector("#featured");
@@ -53,8 +57,8 @@ const tabs = (function () {
                             </article> `;
       }
       if (products[i].category === "sale") {
-        let productContainer = document.querySelector("#sale");
-        productContainer.innerHTML += `<article class="tabs__container">
+        let productContainerSale = document.querySelector("#sale");
+        productContainerSale.innerHTML += `<article class="tabs__container">
                                 <a class="tabs__image tabs__click sm" href="product-card.html"><img data-id="${
                                   products[i].id
                                 }" src="${products[i].img}"
@@ -73,8 +77,8 @@ const tabs = (function () {
                             </article> `;
       }
       if (products[i].category === "new") {
-        let productContainer = document.querySelector("#new");
-        productContainer.innerHTML += `<article class="tabs__container">
+        let productContainerNew = document.querySelector("#new");
+        productContainerNew.innerHTML += `<article class="tabs__container">
                                 <a class="tabs__image tabs__click sm" href="product-card.html"><img data-id="${
                                   products[i].id
                                 }" src="${products[i].img}"
@@ -123,6 +127,14 @@ const tabs = (function () {
       product.convertedPrice = (product.price * rate).toFixed(2);
       product.currency = convertTo;
     }
+    for (let j = 0; j < availableCurrencies.length; j++) {
+      if (availableCurrencies[j].dataset.value === convertTo) {
+        availableCurrencies[j].classList.add("active");
+      } else {
+        availableCurrencies[j].classList.remove("active");
+      }
+    }
+
     showProductsTab(products);
   }
 

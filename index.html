@@ -103,15 +103,19 @@
             <div id="container-top">
                 <div class="tabs navigation-way_4">
                     <div class="tabs__head">
-                        <a href="#" data-tab-name="1" class="tabs__name active">Featured</a>
-                        <a href="#" data-tab-name="2" class="tabs__name">Sale</a>
-                        <a href="#" data-tab-name="3" class="tabs__name">New</a>
+                        <div class="tabs__links">
+                            <a href="#" data-tab-name="1" class="tabs__name active">Featured</a>
+                            <a href="#" data-tab-name="2" class="tabs__name">Sale</a>
+                            <a href="#" data-tab-name="3" class="tabs__name">New</a>
+                        </div>
+                        <div class="currency-container">
+                            <span class="currency_subtitle">Show prices in:</span>
+                            <span class="currency currency_differents convert active" data-value="USD">USD</span>
+                            <span class="currency currency_differents convert" data-value="EUR">EUR</span>
+                            <span class="currency currency_differents convert" data-value="UAH">UAH</span>
+                        </div>
                     </div>
-                    <div class="container">
-                        <button class="currency convert" data-value="USD">Usd</button>
-                        <button class="currency convert" data-value="EUR">Eur</button>
-                        <button class="currency convert" data-value="UAH">Uah</button>
-                    </div>
+
                     <div class="tabs__body">
                         <div data-tab-content="1" id="featured" class="tabs__content active">
                         </div>
@@ -459,12 +463,12 @@
                 <!--Carousel-->
                 <div class="carousel">
                     <div class="buttons">
-                        
+
                         <button class="btn slide-prev">Prev</button>
                     </div>
                     <div class="products">
                     </div>
-                    
+
                     <button class="btn slide-next">Next</button>
                 </div>
             </div>
