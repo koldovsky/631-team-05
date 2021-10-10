@@ -9,8 +9,8 @@
         </a>
         <a href="/shop/sony-yt555" class="text_link"> Sony YT555
         </a>
-        <div class="price">
-        <span class="price">$140,00</span>
+        <div class="speakers-price">
+        <span class="speakers-price">$140,00</span>
         </div>
         <div class="product_button">
         <button type="button">Add to cart
@@ -27,8 +27,8 @@
         </a>
         <a href="/shop/jbl-pt-25" class="text_link"> JBL PT-25
         </a>
-        <div class="price">
-        <span class="price">$180,00</span>
+        <div class="speakers-price">
+        <span class="speakers-price">$180,00</span>
         </div>
         <div class="product_button">
         <button type="button">Add to cart
@@ -45,8 +45,8 @@
         </a>
         <a href="/shop/jbl-rr56" class="text_link"> JBL RR-56
         </a>
-        <div class="price">
-        <span class="price">$110,00</span>
+        <div class="speakers-price">
+        <span class="speakers-price">$110,00</span>
         </div>
         <div class="product_button">
         <button type="button">Add to cart
@@ -63,8 +63,8 @@
         </a>
         <a href="/shop/jbl-gt345" class="text_link"> JBL GT-345
         </a>
-        <div class="price">
-        <span class="price">$120,00</span>
+        <div class="speakers-price">
+        <span class="speakers-price">$120,00</span>
         </div>
         <div class="product_button">
         <button type="button">Add to cart
@@ -81,8 +81,8 @@
         </a>
         <a href="/shop/jbl-rr55" class="text_link"> JBL RR-55
         </a>
-        <div class="price">
-        <span class="price">$110,00</span>
+        <div class="speakers-price">
+        <span class="speakers-price">$110,00</span>
         </div>
         <div class="product_button">
         <button type="button">Add to cart
@@ -99,8 +99,8 @@
         </a>
         <a href="/shop/jbl-or57" class="text_link"> JBL OR-57
         </a>
-        <div class="price">
-        <span class="price">$98,00</span>
+        <div class="speakers-price">
+        <span class="speakers-price">$98,00</span>
         </div>
         <div class="product_button">
         <button type="button">Add to cart
@@ -173,9 +173,9 @@
     showCurrentSlide();
     window.addEventListener('resize', showCurrentSlide);
     
-    const btnNext = document.querySelector(".carousel .slide-next");
+    const btnNext = document.querySelector(".carousel .speakers-slide-next");
     btnNext.addEventListener("click", nextSlide);
   
-    const btnPrev = document.querySelector(".carousel .slide-prev");
+    const btnPrev = document.querySelector(".carousel .speakers-slide-prev");
     btnPrev.addEventListener("click", prevSlide);
   })();

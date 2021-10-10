@@ -16,12 +16,14 @@
     const textDay = Math.floor(gap / day);
     const textHour = Math.floor((gap % day) / hour);
     const textMinute = Math.floor((gap % hour) / minute);
+    const textSecond = Math.floor((gap % minute) / second);
     
     //update html
     
     document.querySelector('.countdown-speakers .day').innerText = textDay;
     document.querySelector('.countdown-speakers .hour').innerText = textHour;
     document.querySelector('.countdown-speakers .minute').innerText = textMinute;
+    document.querySelector('.countdown-speakers .second').innerText = textSecond;
     };
     
     setInterval(countdown, 1000);
