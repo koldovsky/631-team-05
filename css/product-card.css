@@ -204,7 +204,7 @@ body > main .product-description__title {
     border: 1px solid var(--button-black-color);
     border-radius: 0.2rem;
     box-shadow: 0 0 2px var(--offer-jbl-color);
-    transform: scale(2);
+    transform: scale(1.5);
   }
 }
 @media (min-width: 1025px) {

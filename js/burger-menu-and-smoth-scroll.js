@@ -5,6 +5,7 @@
     document.body.classList.toggle("lock");
     iconBurger.classList.toggle("active");
     navigationsBody.classList.toggle("active");
+    document.querySelector(".cart-link").classList.toggle("hidden");
   });
 
   const navLinks = document.querySelectorAll(".navigation__link[data-goto]");
@@ -27,6 +28,7 @@
           document.body.classList.remove("lock");
           iconBurger.classList.remove("active");
           navigationsBody.classList.remove("active");
+          document.querySelector(".cart-link").classList.add("hidden");
         }
 
         window.scrollTo({
