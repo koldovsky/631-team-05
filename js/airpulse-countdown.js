@@ -20,10 +20,10 @@
     
     //update html
     
-    document.querySelector('.countdown-speakers-day').innerText = textDay;
-    document.querySelector('.countdown-speakers-hour').innerText = textHour;
-    document.querySelector('.countdown-speakers-minute').innerText = textMinute;
-    document.querySelector('.countdown-speakers-second').innerText = textSecond;
+    document.querySelector('.countdown-airpulse-day').innerText = textDay;
+    document.querySelector('.countdown-airpulse-hour').innerText = textHour;
+    document.querySelector('.countdown-airpulse-minute').innerText = textMinute;
+    document.querySelector('.countdown-airpulse-second').innerText = textSecond;
     };
     
     setInterval(countdown, 1000);
