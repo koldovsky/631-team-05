@@ -275,4 +275,8 @@ position: absolute;
     color: rgba(83,83,83,0.45);
     font-size: 30px;
   }
-  
+  .speaker-vl{
+    border-left: 1px solid rgba(83,83,83,0.45); 
+    max-height: 100px;
+    margin-top: 50px;   
+  }
