@@ -230,15 +230,15 @@ body {
   text-decoration: none;
   border: none;
   display: block;
-  width: 94%;
+  width: 100%;
 }
 @media(max-width:700px) {
 
   .label_footer{
-    width: 150px;
+    width: 140px;
     height: 40px;
-}
  }
+}
 
 input {
   padding-left: 10px;
