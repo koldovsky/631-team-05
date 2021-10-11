@@ -71,6 +71,9 @@ display: grid;
     transition: 0.5s;
     margin: 0px 0px 20px 15px;
 }
+.speakers_button:hover{
+  background-color: #1e90ff;
+}
 .speakers-slide-prev,
 .speakers-slide-next {
   border-radius: 50%;
