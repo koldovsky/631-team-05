@@ -112,7 +112,7 @@
     let currentSlide = 0;
   
     function showCurrentSlide() {
-      const slideContainer = document.querySelector(".carousel .products");
+      const slideContainer = document.querySelector(".carousel .speakers-products");
       let html = '';
       if ((window.innerWidth < 600)) {
         html = slides[currentSlide];
