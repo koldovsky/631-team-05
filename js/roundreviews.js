@@ -1,6 +1,6 @@
 (function () {
   const reviews = [
-    `<div class="person1">
+    `<div class="persona">
         <img src="img/man-with-headphones.png" id="person1" alt="man-with-headphones"">
     </div>
     <div class="name1">
@@ -14,7 +14,7 @@
     <div class="date1">
         <h4>December 15,2020</h4>
     </div>`,
-    `<div class="person2">
+    `<div class="personb">
         <img src="img/girl-with-headphones.png" alt="girl-with-headphones" id="person2">
     </div>
     <div class="name2">
@@ -28,7 +28,7 @@
     <div class="date2">
     <h4>March 28,2021</h4>
 </div>`,
-    `<div class="person3">
+    `<div class="personc">
         <img src="img/smiling-man.png" alt="smiling-man" id="person3">
     </div>
     <div class="name3">
