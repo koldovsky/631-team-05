@@ -17,7 +17,15 @@
 div .tabs .tabs__head {
   margin-bottom: 25px;
 }
-#container-top > div.tabs > div.tabs__head > a.tabs__name {
+div.tabs .currency-container {
+  margin-top: 30px;
+}
+div.tabs .currency-container .currency:hover {
+  cursor: pointer;
+}
+#container-top > div.tabs > div.tabs__head > .tabs__links a.tabs__name,
+.currency,
+.currency_subtitle {
   position: relative;
   font-size: 1rem;
   font-weight: 700;
@@ -28,7 +36,12 @@ div .tabs .tabs__head {
   padding: 0 15px;
 }
 
-#container-top > div.tabs > div.tabs__head > .tabs__name.active::after {
+#container-top
+  > div.tabs
+  > div.tabs__head
+  > .tabs__links
+  .tabs__name.active::after,
+.currency::after {
   content: " ";
   display: block;
   position: absolute;
@@ -36,12 +49,36 @@ div .tabs .tabs__head {
   width: 100%;
   height: 3px;
   border-radius: 0.1rem;
-  background-color: var(--offer-jbl-color);
   transition: 2s;
 }
+#container-top
+  > div.tabs
+  > div.tabs__head
+  > .tabs__links
+  .tabs__name.active::after,
+.currency::after {
+  background-color: var(--offer-jbl-color);
+}
+#container-top
+  > div.tabs.navigation-way_4
+  > div.tabs__head
+  > div.currency-container
+  > span.currency::after {
+  background-color: var(--button-after-color);
+}
 
-#container-top > div.tabs > div.tabs__head > a.tabs__name.active {
+#container-top > div.tabs > div.tabs__head > .tabs__links a.tabs__name.active,
+.currency.active {
   opacity: 1;
+}
+#container-top
+  > div.tabs
+  > div.tabs__head
+  > div.currency-container
+  > span.currency_subtitle {
+  font-size: 0.8rem;
+  color: var(--default-color);
+  opacity: 0.9;
 }
 .tabs__content {
   display: flex;
@@ -96,7 +133,13 @@ div .tabs__container p {
     margin: auto;
     padding: 0 24px;
   }
-
+  .tabs__head {
+    display: flex;
+    justify-content: space-between;
+  }
+  div.tabs .currency-container {
+    margin-top: 0;
+  }
   .tabs__content {
     display: flex;
     flex-direction: row;
@@ -126,5 +169,3 @@ div .tabs__container p {
     margin-right: 0;
   }
 }
-
-/* max-width: 332px; */

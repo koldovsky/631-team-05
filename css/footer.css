@@ -229,6 +229,15 @@ body {
   background: rgb(48, 48, 48);
   text-decoration: none;
   border: none;
+  display: block;
+  width: 100%;
+}
+@media(max-width:700px) {
+
+  .label_footer{
+    width: 140px;
+    height: 40px;
+ }
 }
 
 input {
@@ -244,30 +253,39 @@ input {
   border-color: #2877b6;
   font-size: 15px;
   font-weight: 500;
+  display: block;
+  width: 100%;
 }
+ @media(max-width:700px) {
+
+  .buttom_subscribe{
+    width: 200px;
+    height: 40px;
+}
+ }
 .buttom_subscribe:hover {
   background-color: #fff;
   color: #2a2a2a;
 }
 
 .menu__footer {
-  display: grid;
-  grid-template-columns: repeat(5, 2fr);
-  grid-auto-rows: 150px;
-  padding-top: 70px;
-  padding-left: 110px;
+  display: grid !important;
+  grid-template-columns: repeat(5, 2fr) !important;
+  grid-auto-rows: 150px !important;
+  padding-top: 70px !important;
+  padding-left: 110px !important;
   font-family: PT Sans, sans-serif;
   color: #fff;
-  list-style-type: none;
+  list-style-type: none !important;
 }
 
 .social_menu {
-  list-style-type: none;
-  margin-left: -30px;
-  text-decoration: none;
-  color: #fff;
+  list-style-type: none !important;
+  margin-left: -30px !important;
+  text-decoration: none !important;
+  color: #fff !important;
   cursor: pointer;
-  line-height: 2;
+  line-height: 2 !important;
 }
 .social_menu:hover a {
   text-decoration: underline;
@@ -285,17 +303,12 @@ div ul.social_menu a {
   width: 30px;
 }
 
-.dash_footer {
-  border-bottom: 3px solid rgb(48, 48, 48);
-  padding-top: 120px;
-  width: 1300px;
-}
 
 .created_by {
-  padding-top: 15px;
+  padding-top: 100px;
   padding-left: 100px;
   padding-bottom: 30px;
-  font-family: sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
   font-weight: 200;
   font-size: 15px;

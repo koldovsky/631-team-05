@@ -1,4 +1,4 @@
-let span = document.getElementsByTagName('span');
+let span = document.getElementsByClassName('span_headphones');
 	let product = document.getElementsByClassName('product')
 	let product_page = Math.ceil(product.length/4);
 	let l = 0;

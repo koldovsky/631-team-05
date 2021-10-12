@@ -19,12 +19,8 @@ header .banner-bg {
 header .banner-bg_origin {
   background: url(../img/bg-photos/main-bg.webp) no-repeat;
   padding: 0 24px;
-  background-position: 48.44% 43.95%;
+  background-position: 48.44% 35.95%;
 }
-/* section div nav .navigation-pages,
-.navigation-social {
-  display: block;
-} */
 
 section div nav .navigation-logo img {
   max-width: 114px;
@@ -106,16 +102,6 @@ section div nav .navigation-logo img {
     overflow: hidden;
     margin: auto;
   }
-  /* section div nav.navigation .navigation-wrapper::before {
-    content: " ";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    background-color: var(--light-text-color);
-    z-index: 5;
-  } */
 
   section div nav.navigation .navigation-wrapper.active {
     top: 0;
@@ -213,7 +199,7 @@ section div nav .navigation-logo img {
     display: flex;
   }
   header .banner-bg {
-    min-height: 100vh;
+    min-height: calc(100vh - 79px);
   }
 
   section div .navigation .navigation-wrapper {
