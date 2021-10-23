@@ -2,7 +2,7 @@
 var numberOfFilms = +prompt ("Сколько фильмов вы уже посмотрели?", " ");
 
 var personalMovieDB = {
-    count: result,
+    count: numberOfFilms,
     movies: {},
     actors: {},
     genres: [],
