@@ -1,7 +1,7 @@
 
-const numberOfFilms = +prompt ("Сколько фильмов вы уже посмотрели?", " ");
+var numberOfFilms = +prompt ("Сколько фильмов вы уже посмотрели?", " ");
 
-const personalMovieDB = {
+var personalMovieDB = {
     count: result,
     movies: {},
     actors: {},
@@ -9,7 +9,7 @@ const personalMovieDB = {
     privat: false
 };
 
-const a = prompt("Последний фильм?", " "),
+var a = prompt("Последний фильм?", " "),
 b = +prompt("Оцените его", " "),
  c = prompt("Последний фильм?", " "),
  d = +prompt("Оцените его", " ");
